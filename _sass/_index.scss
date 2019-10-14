@@ -151,7 +151,23 @@ body, html{
   -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
+.border-button {
+  background: unset;
+  background-image: url(/assets/img/bottom-border.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 135px;
+}
 
+.top-boreder{
+  background: unset;
+  background-image: url(/assets/img/top-border.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 156px;  
+}
 .btn-white-link{
   color: white;
 }
