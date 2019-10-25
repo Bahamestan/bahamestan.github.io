@@ -99,7 +99,7 @@ body, html{
 
 .navbar-custom {
   padding: 0.5rem 2rem;
-  background-image: linear-gradient(-90deg, #3AABFF 0%, #1B72FF 100%); 
+  background-image: linear-gradient(-90deg, #3AABFFF2 0%, #1B72FFED 100%); 
 
 }
 
@@ -195,4 +195,7 @@ body, html{
 
 .img{
   width: 100%;
+}
+.row {
+    margin: 15px -15px;
 }
