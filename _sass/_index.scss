@@ -199,6 +199,26 @@ body, html{
 .row {
     margin: 15px -15px;
 }
-.txtContent {
+.home-post-text {
+    padding: 10px;
+    text-align: justify
+}
+.home-post-thumbnail {
+    height: auto;
+    background-repeat: no-repeat;
+    min-height: 200px;
+    background-position: top center;
+    background-size: 100% auto;
+    position: relative;
+    width: 100%;
+    display: block;
+    background-color: coral;
+}
+.home-post-title, .post-date {
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(0,0,0, 0.5);
+    color:white;
+    width: 100%;
     padding: 10px;
 }

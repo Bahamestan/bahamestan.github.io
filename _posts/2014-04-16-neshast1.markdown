@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "نشست اول: نقد و بررسی زیرگذر چهارراه ولیعصر"
+thumbnail: "/assets/img/neshast1-thumbnail.jpg"
 categories: [نشست]
 tags: [چهارراه ولیعصر, حق بر شر, اقوامی, معینی]
 excerpt_separator: <!--بیشتر-->

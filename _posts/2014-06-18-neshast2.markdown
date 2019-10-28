@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "نشست دوم: تکرار زیرگذر چهارراه ولیعصر"
+thumbnail: "/assets/img/neshast2-thumbnail.jpg"
 categories: [نشست]
 tags: [چهارراه ولیعصر, حق بر شر, اطهاری, تشکر]
 excerpt_separator: <!--بیشتر-->

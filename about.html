@@ -19,43 +19,24 @@ layout: home
             <br>
         </div>
         <h3 style="text-align: center;">آخرین فعالیت‌ها</h3>
-        {% for post in site.posts limit:1 %}
-... Show the post ...
-{% endfor %}
         <div class="row">
+        {% for post in site.posts limit:3 %}                    
             <div class="col-lg col-md-4">
-                <div class="box-shadow">
-                    <h3>رویداد روز جهانی معلولان</h3>
-                    <p>ﺏﺎﻬﻤﺴﺗﺎﻧ ﺱﺍﺰﻣﺎﻧی ﺎﺴﺗ ﻡﺭﺪﻣ ﻦﻫﺍﺩ کﻩ ﺩﺭ ﺭﺎﺴﺗﺍی ﺢﻣﺍیﺕ ﺍﺯ ﺢﻗ ﺏﺭﺎﺑﺭ ﻪﻤﻫ ﻦﺴﺒﺗ ﺐﻫ ﺶﻫﺭ، ﺕﻭﺎﻨﻤﻧﺪﺳﺍﺯی ﻪﻤﻫ
-                        ﺱﺍکﻥﺎﻧ ﺶﻫﺭ ﻭ ﺐﻫ ﺦﺻﻮﺻ گﺭﻮﻫ<200c>ﻫﺍی ﺂﺳیﺏ<200c> پﺫیﺭ، ﻭ پیگیﺭی ﻢﻧﺎﻔﻋ ﺐﻫ ﺡﺎﺷیﻩ ﺭﺎﻧﺪﻫ ﺵﺪﻫ ﺩﺭ
-                        ﻑﺭﺍیﻥﺪﻫﺍی ﺕﻮﺴﻌﻫ ﺶﻫﺭی ﻒﻋﺎﻟیﺕ ﻡی<200c>کﻥﺩ. </p>
-                    <a href="">بیشتر</a>
-                    <br>
+                <div class="box-shadow no-padding">
+                    <a href="{{ BASE_PATH }}{{ post.url }}" class="home-post-thumbnail" style="background-image: url('{{ BASE_PATH }}{{ post.thumbnail }}');">
+                        <div class="home-post-title">
+                            <h4>{{ post.title }}</h4>
+                            <h6>{{ post.date | date: "%-d %B %Y"}}</h6>
+                        </div>
+                    </a>
+                    <div class="home-post-text">
+                        <p>{{ post.content | strip_html | truncatewords:30 }} </p>
+                        <a class="btn btn-link btn-sm" href="{{ BASE_PATH }}{{ post.url }}">بیشتر</a>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg col-md-4">
-                <div class="box-shadow">
-                    <h3>ﺭﻭیﺩﺍﺩ ﺭﻭﺯ ﺞﻫﺎﻧی ﻢﻌﻟﻭﻼﻧ</h3>
-                    <p>ﺏﺎﻬﻤﺴﺗﺎﻧ ﺱﺍﺰﻣﺎﻧی ﺎﺴﺗ ﻡﺭﺪﻣ ﻦﻫﺍﺩ کﻩ ﺩﺭ ﺭﺎﺴﺗﺍی ﺢﻣﺍیﺕ ﺍﺯ ﺢﻗ ﺏﺭﺎﺑﺭ ﻪﻤﻫ ﻦﺴﺒﺗ ﺐﻫ ﺶﻫﺭ، ﺕﻭﺎﻨﻤﻧﺪﺳﺍﺯی ﻪﻤﻫ
-                        ﺱﺍکﻥﺎﻧ ﺶﻫﺭ ﻭ ﺐﻫ ﺦﺻﻮﺻ گﺭﻮﻫ<200c>ﻫﺍی ﺂﺳیﺏ<200c> پﺫیﺭ، ﻭ پیگیﺭی ﻢﻧﺎﻔﻋ ﺐﻫ ﺡﺎﺷیﻩ ﺭﺎﻧﺪﻫ ﺵﺪﻫ ﺩﺭ
-                        ﻑﺭﺍیﻥﺪﻫﺍی ﺕﻮﺴﻌﻫ ﺶﻫﺭی ﻒﻋﺎﻟیﺕ ﻡی<200c>کﻥﺩ. </p>
-                    <a href="">ﺏیﺶﺗﺭ</a>
-                    <br>
-                </div>
-            </div>
-            <div class="col-lg col-md-4">
-                <div class="box-shadow">
-                    <h3>ﺭﻭیﺩﺍﺩ ﺭﻭﺯ ﺞﻫﺎﻧی ﻢﻌﻟﻭﻼﻧ</h3>
-                    <p>ﺏﺎﻬﻤﺴﺗﺎﻧ ﺱﺍﺰﻣﺎﻧی ﺎﺴﺗ ﻡﺭﺪﻣ ﻦﻫﺍﺩ کﻩ ﺩﺭ ﺭﺎﺴﺗﺍی ﺢﻣﺍیﺕ ﺍﺯ ﺢﻗ ﺏﺭﺎﺑﺭ ﻪﻤﻫ ﻦﺴﺒﺗ ﺐﻫ ﺶﻫﺭ، ﺕﻭﺎﻨﻤﻧﺪﺳﺍﺯی ﻪﻤﻫ
-                        ﺱﺍکﻥﺎﻧ ﺶﻫﺭ ﻭ ﺐﻫ ﺦﺻﻮﺻ گﺭﻮﻫ<200c>ﻫﺍی ﺂﺳیﺏ<200c> پﺫیﺭ، ﻭ پیگیﺭی ﻢﻧﺎﻔﻋ ﺐﻫ ﺡﺎﺷیﻩ ﺭﺎﻧﺪﻫ ﺵﺪﻫ ﺩﺭ
-                        ﻑﺭﺍیﻥﺪﻫﺍی ﺕﻮﺴﻌﻫ ﺶﻫﺭی ﻒﻋﺎﻟیﺕ ﻡی<200c>کﻥﺩ. </p>
-                    <a href="">ﺏیﺶﺗﺭ</a>
-                    <br>
-                </div>
-
-            </div>
+        {% endfor %}
         </div>
-
     </div>
 </section>
 <br>
@@ -84,28 +65,43 @@ layout: home
         <div class="row">
             <div class="col-lg col-md-4">
                 <div class="box-shadow no-padding">
-                    <img class="img" src="https://picsum.photos/300/200"></img>
-                    <div class="txtContent">
-                        <h3>رویداد روز جهانی معلولان</h3>
-                        <a href="">بیشتر</a>
+                    <a href="#" class="home-post-thumbnail" style="background-image: url('https://picsum.photos/300/200');">
+                        <div class="home-post-title">
+                            <h4>رویداد روز جهانی معلولان</h4>
+                            <h6>۱۲ آذر ۹۶</h6>
+                        </div>
+                    </a>
+                    <div class="home-post-text">
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
+                        <a class="btn btn-link btn-sm" href="">بیشتر</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg col-md-4">
                 <div class="box-shadow no-padding">
-                    <img class="img" src="https://picsum.photos/300/200"></img>
-                    <div class="txtContent">
-                        <h3>رویداد روز جهانی معلولان</h3>
-                        <a href="">بیشتر</a>
+                    <a href="#" class="home-post-thumbnail" style="background-image: url('https://picsum.photos/300/200');">
+                        <div class="home-post-title">
+                            <h4>رویداد روز جهانی معلولان</h4>
+                            <h6>۱۲ آذر ۹۶</h6>
+                        </div>
+                    </a>
+                    <div class="home-post-text">
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
+                        <a class="btn btn-link btn-sm" href="">بیشتر</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg col-md-4">
                 <div class="box-shadow no-padding">
-                    <img class="img" src="https://picsum.photos/300/200"></img>
-                    <div class="txtContent">
-                        <h3>رویداد روز جهانی معلولان</h3>
-                        <a href="">بیشتر</a>
+                    <a href="#" class="home-post-thumbnail" style="background-image: url('https://picsum.photos/300/200');">
+                        <div class="home-post-title">
+                            <h4>رویداد روز جهانی معلولان</h4>
+                            <h6>۱۲ آذر ۹۶</h6>
+                        </div>
+                    </a>
+                    <div class="home-post-text">
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
+                        <a class="btn btn-link btn-sm" href="">بیشتر</a>
                     </div>
                 </div>
             </div>
@@ -137,36 +133,50 @@ layout: home
             <br>
             <br>
         </div>
-        <div class="row">
+         <div class="row">
             <div class="col-lg col-md-4">
                 <div class="box-shadow no-padding">
-                    <img class="img" src="https://picsum.photos/300/200"></img>
-                    <div class="txtContent">
-                        <h3>رویداد روز جهانی معلولان</h3>
-                        <a href="">بیشتر</a>
+                    <a href="#" class="home-post-thumbnail" style="background-image: url('https://picsum.photos/300/200');">
+                        <div class="home-post-title">
+                            <h4>رویداد روز جهانی معلولان</h4>
+                            <h6>۱۲ آذر ۹۶</h6>
+                        </div>
+                    </a>
+                    <div class="home-post-text">
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
+                        <a class="btn btn-link btn-sm" href="">بیشتر</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg col-md-4">
                 <div class="box-shadow no-padding">
-                    <img class="img" src="https://picsum.photos/300/200"></img>
-                    <div class="txtContent">
-                        <h3>رویداد روز جهانی معلولان</h3>
-                        <a href="">بیشتر</a>
+                    <a href="#" class="home-post-thumbnail" style="background-image: url('https://picsum.photos/300/200');">
+                        <div class="home-post-title">
+                            <h4>رویداد روز جهانی معلولان</h4>
+                            <h6>۱۲ آذر ۹۶</h6>
+                        </div>
+                    </a>
+                    <div class="home-post-text">
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
+                        <a class="btn btn-link btn-sm" href="">بیشتر</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg col-md-4">
                 <div class="box-shadow no-padding">
-                    <img class="img" src="https://picsum.photos/300/200"></img>
-                    <div class="txtContent">
-                        <h3>رویداد روز جهانی معلولان</h3>
-                        <a href="">بیشتر</a>
+                    <a href="#" class="home-post-thumbnail" style="background-image: url('https://picsum.photos/300/200');">
+                        <div class="home-post-title">
+                            <h4>رویداد روز جهانی معلولان</h4>
+                            <h6>۱۲ آذر ۹۶</h6>
+                        </div>
+                    </a>
+                    <div class="home-post-text">
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
+                        <a class="btn btn-link btn-sm" href="">بیشتر</a>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </section>
 <br>
