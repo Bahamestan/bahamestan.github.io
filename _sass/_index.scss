@@ -2,6 +2,10 @@ body, html{
   font-family: Vazir;
   direction: rtl;
 }
+p {
+      text-align: justify;
+    color: #444;
+}
 .landing-header {
   height: 100%;
   max-height: 650px;
@@ -221,4 +225,25 @@ body, html{
     color:white;
     width: 100%;
     padding: 10px;
+}
+.page-post-thumbnail {
+    height: auto;
+    background-repeat: no-repeat;
+    min-height: 25em;
+    background-position: top center;
+    background-size: 100% auto;
+    position: relative;
+    width: 100%;
+    display: block;
+    background-color: coral;
+    margin-bottom: 1em;
+}
+.page-post-title, .post-date {
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(0,0,0, 0.5);
+    color:white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
 }
