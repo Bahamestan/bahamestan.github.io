@@ -3,8 +3,9 @@ title: 'نشست دوم: تکرار زیرگذر چهارراه ولیعصر'
 layout: post
 thumbnail: "/assets/img/neshast2-thumbnail.jpg"
 categories:
-- نشست
+- neshast
 tags:
+- beforeWG
 - چهارراه ولیعصر
 - حق بر شر
 - اطهاری

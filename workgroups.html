@@ -1,0 +1,150 @@
+---
+title: My page
+layout: default
+---
+
+    <div class="container">
+        <div class="header">
+          <div class="">
+              <div class="col-lg-12 no-padding">
+                  <h1>کارگروه نشست</h1>
+                  <h2>با هم حق شنیده‌شدن را دنبال می‌کنیم</h2>  
+                  <br>  
+              </div>
+              <!-- <div class="col-lg-4">
+                <div class="play-button">
+
+                </div>
+              </div>     -->
+          </div>
+          <div>
+            <div class="col-lg-12 no-padding">
+                <div class="box-shadow">
+                  <p data-ref="head.description">
+                  باهمستان از فروردین سال ۱۳۹۳ سلسله نشست‌های مدنی حق بر شهر را با هدف  گفتگو پیرامون مفهوم «حق بر شهر» در پیوند با مسائل روزمره و موضوعات روز شهری در ایران و ایجاد فضای گفتگو بین نظریه‌پردازان، متخصصان، مدیران و کنش‌گران شهری، نمایندگان مردم در شهر و روزنامه‌نگاران شروع کرد. بعد از برگزاری پنج نشست توسط تیم اجرایی باهمستان از نشست ششم کارگروه نشست شامل داوطلبان تشکیل شد و تا بهار ۹۶ که اعضا گروه تصمیم گرفتند که به کار کارگروه پایان دهند پنج نشست دیگر با موضوعات لایحه مدیریت شهری،حق افغانستانی‌ها در شهر، حق کودکان در شهر، خیابان خوابی، و محله اسلام‌آباد برگزار کرد.    
+                  </p>
+                  <div class="text-right">
+                      <a class="btn btn-link btn-lg" href="#">مطالعه طرح کارگروه</a>
+                      <!-- <a class="btn btn-primary btn-lg">پیوستن به کارگروه</a>   -->
+                  </div>    
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    <section class="current-projects">
+      <br>
+      <br>
+      <div class="container">
+        <h4>اقدامات جاری</h4>
+        <div class="row">
+            <div class="col-lg col-md-12"><p>فعالیت‌های کاارگروه نشست باهمستان از بهار ۱۳۹۶ متوقف شده است.</p></div>
+          <!--<div class="col-lg col-md-6">
+            <div class="box-shadow">
+                <h5 data-ref="currentProjects[0].title"></h5>
+                <p data-ref="currentProjects[0].description"></p>
+                <a class="btn btn-link btn-sm" href="#" data-ref="currentProjects[0].link">بیشتر بخوانید</a>
+            </div>
+            <br>
+          </div>
+          <div class="col-lg col-md-6">
+            <div class="box-shadow">
+              <h5 data-ref="currentProjects[0].title"></h5>
+              <p data-ref="currentProjects[0].description"></p>
+              <a class="btn btn-link btn-sm" href="#" data-ref="currentProjects[0].link">بیشتر بخوانید</a>
+            </div>  
+            <br>
+          </div>
+          <div class="col-lg col-md-6">
+            <div class="box-shadow">
+              <h5 data-ref="currentProjects[0].title"></h5>
+              <p data-ref="currentProjects[0].description"></p>
+              <a class="btn btn-link btn-sm" href="#" data-ref="currentProjects[0].link">بیشتر بخوانید</a>
+            </div>
+          </div>-->
+          <br>
+        </div>
+      </div> 
+    </section>
+    <br>
+    <br>
+    <!-- Vertical Timeline -->
+    <section id="conference-timeline" class="container">
+
+      <div class="timeline-start">پیشینه فعالیت‌های کارگروه</div>
+      <div class="conference-center-line"></div>
+      <div class="conference-timeline-content">
+        <!-- Article -->
+        <div class="timeline-article">
+{% for post in site.categories.neshast %}
+    {% assign mod = forloop.index | modulo: 2 %}
+    {% if mod == 0 %}
+            <div class="content-left-container">
+                <div class="box-shadow">
+                  <h5>{{ post.title }}</h5>
+                  <img src="{{ BASE_PATH }}{{ post.thumbnail }}" class="timeline-img">
+                  <p>{{ post.content | strip_html | truncatewords:30 }}</p>
+                  <div class="clearfix">
+                      <span class=" text-disabled float-left">{{ post.date | date: "%-d %B %Y"}}</span>
+                        <a href="{{ BASE_PATH }}{{ post.url }}" class="btn btn-link float-right">بیشتر بخوانید</a>
+                  </div>    
+                </div>
+              </div>
+                        <div style="clear: both"></div>
+
+    {% else %}
+             <div class="content-right-container">
+                <div class="box-shadow">
+                  <h5>{{ post.title }}</h5>
+                  <img src="{{ BASE_PATH }}{{ post.thumbnail }}" class="timeline-img">
+                  <p>{{ post.content | strip_html | truncatewords:30 }}</p>
+                  <div class="clearfix">
+                      <span class=" text-disabled float-left">{{ post.date | date: "%-d %B %Y"}}</span>
+                        <a href="{{ BASE_PATH }}{{ post.url }}" class="btn btn-link float-right">بیشتر بخوانید</a>
+                  </div>    
+                </div>
+                  </div> 
+     {% endif %}
+                <div class="meta-date"></div>
+        
+{% endfor %}
+          </div>
+          <!-- // Article -->
+        
+        </div>
+      <div class="timeline-end">تشکیل کارگروه: زمستان ۹۴</div>
+    </section>
+    <section class="current-projects">
+      <br>
+      <br>
+      <div class="container">
+        <h4>فعالیت‌های مرتبط پیش از تشکیل کارگروه</h4>
+        <div class="row">
+            <div class="col-lg col-md-12"><p>فعالیت‌های کاارگروه نشست باهمستان از بهار ۱۳۹۶ متوقف شده است.</p></div>
+          <!--<div class="col-lg col-md-6">
+            <div class="box-shadow">
+                <h5 data-ref="currentProjects[0].title"></h5>
+                <p data-ref="currentProjects[0].description"></p>
+                <a class="btn btn-link btn-sm" href="#" data-ref="currentProjects[0].link">بیشتر بخوانید</a>
+            </div>
+            <br>
+          </div>
+          <div class="col-lg col-md-6">
+            <div class="box-shadow">
+              <h5 data-ref="currentProjects[0].title"></h5>
+              <p data-ref="currentProjects[0].description"></p>
+              <a class="btn btn-link btn-sm" href="#" data-ref="currentProjects[0].link">بیشتر بخوانید</a>
+            </div>  
+            <br>
+          </div>
+          <div class="col-lg col-md-6">
+            <div class="box-shadow">
+              <h5 data-ref="currentProjects[0].title"></h5>
+              <p data-ref="currentProjects[0].description"></p>
+              <a class="btn btn-link btn-sm" href="#" data-ref="currentProjects[0].link">بیشتر بخوانید</a>
+            </div>
+          </div>-->
+          <br>
+        </div>
+      </div> 
+    </section>    

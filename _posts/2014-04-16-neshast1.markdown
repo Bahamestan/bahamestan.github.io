@@ -3,12 +3,39 @@ title: 'نشست اول: نقد و بررسی زیرگذر چهارراه ولی
 layout: post
 thumbnail: "/assets/img/neshast1-thumbnail.jpg"
 categories:
-- نشست
+- neshast
 tags:
+- beforeWG
 - چهارراه ولیعصر
 - حق بر شر
 - اقوامی
 - معینی
+images:
+- image_path: /assets/img/neshast1-2.jpg
+  title: "neshast1-2"
+- image_path: /assets/img/neshast1-3.jpg
+  title: "neshast1-3"
+- image_path: /assets/img/neshast1-5.jpg
+  title: "neshast1-5"
+- image_path: /assets/img/neshast1-6.jpg
+  title: "neshast1-6"
+- image_path: /assets/img/neshast1-7.jpg
+  title: "neshast1-7"
+- image_path: /assets/img/neshast1-8.jpg
+  title: "neshast1-8"
+- image_path: /assets/img/neshast1-9.jpg
+  title: "neshast1-9"
+- image_path: /assets/img/neshast1-10.jpg
+  title: "neshast1-10"
+- image_path: /assets/img/neshast1-11.jpg
+  title: "neshast1-11"
+- image_path: /assets/img/neshast1-12.jpg
+  title: "neshast1-12"
+- image_path: /assets/img/neshast1-13.jpg
+  title: "neshast1-13"
+- image_path: /assets/img/neshast1-15.jpg
+  title: "neshast1-15"
+  
 excerpt_separator: "<!--بیشتر-->"
 ---
 

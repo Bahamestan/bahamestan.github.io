@@ -3,8 +3,9 @@ title: 'نشست سوم: پدیده دست‌فروشی در شهر'
 layout: post
 thumbnail: "/assets/img/neshast3-thumbnail.jpg"
 categories:
-- نشست
+- neshast
 tags:
+- beforeWG
 - دستفروشی
 - حق بر شر
 - نسترن موسوی
