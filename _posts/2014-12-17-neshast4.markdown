@@ -3,13 +3,28 @@ title: 'نشست چهارم: فضاهای شهری و خشونت ساختاری 
 layout: post
 thumbnail: "/assets/img/neshast4-thumbnail.jpg"
 categories:
-- neshast
+- exec
 tags:
-- beforeWG
+- نشست
 - خشونت علیه زنان
 - حق بر شر
 - اعزازی
 - زنگنه
+images:
+- image_path: /assets/img/neshast4-1.jpg
+  title: "neshast4-1"
+- image_path: /assets/img/neshast4-2.jpg
+  title: "neshast4-2"
+- image_path: /assets/img/neshast4-3.jpg
+  title: "neshast4-3"
+- image_path: /assets/img/neshast4-4.jpg
+  title: "neshast4-4"
+- image_path: /assets/img/neshast4-5.jpg
+  title: "neshast4-5"
+- image_path: /assets/img/neshast4-6.jpg
+  title: "neshast4-6"
+- image_path: /assets/img/neshast4-7.jpg
+  title: "neshast4-7"
 excerpt_separator: "<!--بیشتر-->"
 ---
 

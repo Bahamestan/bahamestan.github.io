@@ -3,13 +3,17 @@ title: 'نشست دوم: تکرار زیرگذر چهارراه ولیعصر'
 layout: post
 thumbnail: "/assets/img/neshast2-thumbnail.jpg"
 categories:
-- neshast
+- exec
 tags:
-- beforeWG
+- کارپیدو
+- نشست
 - چهارراه ولیعصر
 - حق بر شر
 - اطهاری
 - تشکر
+images:
+- image_path: /assets/img/neshast2-1.jpg
+  title: "neshast2-1"
 excerpt_separator: "<!--بیشتر-->"
 ---
 
