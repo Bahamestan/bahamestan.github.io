@@ -1,5 +1,5 @@
 ---
-title: My page
+title: کارگروه محلی
 layout: default
 ---
 
@@ -143,3 +143,73 @@ layout: default
         </div>
       </div> 
     </section>    
+<section id="join_wg">
+    <div class="blank-space"></div>
+    <div class="container">
+        <div class="row" >
+            <h3>پیوستن به کارگروه محلی</h3>
+        </div>
+     <div id="join-form-button">    
+      <form 
+            action="https://formspree.io/xzbpyyvw"
+            method="POST"
+            id="join-form"
+            enctype="multipart/form-data"
+        >
+      <div class="row">
+        <div class="col-md-3">
+          <label for="fname">نام</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" id="fname" name="firstname" placeholder="نام شما.." required oninvalid="this.setCustomValidity('لطفاً نام خود را وارد کنید.')">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="lname">نام خانوادگی</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" id="lname" name="lastname" placeholder="نام خانوادگی شما.." required oninvalid="this.setCustomValidity('لطفا نام خانوادگی خود را وارد کنید.')">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="email">آدرس ایمیل</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" id="email" name="_replyto" placeholder="آدرس ایمیل شما.." required oninvalid="this.setCustomValidity('لطفاً آدرس ایمیل خود را وارد کنید.')">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="phone">شماره تماس</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" id="phone" name="phone" placeholder="شماره تماس شما.." required oninvalid="this.setCustomValidity('لطفاً شماره تماس خود را وارد کنید.')">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="description">شرح مختصر</label>
+        </div>
+        <div class="col-md-9">
+          <textarea id="subject" name="description" placeholder="از علاقه‌مندی‌ها، تجارب، تحصیلات و مشترک شما با کارگروه .." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="resume">رزومه</label>
+        </div>
+        <div class="col-md-9">
+          <input type="file" id="resume" name="upload">
+        </div>
+      </div>
+      <div class="row">
+          <input type="submit" value="ثبت">
+      </div>
+      </form>
+    </div>     
+      <p id="join-form-status"></p>
+    </div>
+
+</section>
