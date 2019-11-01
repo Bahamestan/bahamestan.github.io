@@ -1,0 +1,215 @@
+---
+title: کارگروه محلی
+layout: default
+---
+
+    <div class="container">
+        <div class="header">
+          <div class="">
+              <div class="col-lg-12 no-padding">
+                <a href="/wg-neshast.html" class="page-post-thumbnail" style="background-image: url('/assets/img/wg-pasgah-thumbnail.jpg');">
+                        <div class="page-post-title">
+                          <h1>کارگروه محلی</h1>
+                          <h2>با هم مشارکت در محله را تمرین می‌کنیم</h2>  
+                        </div>
+                    </a>                    
+              </div>
+              <!-- <div class="col-lg-4">
+                <div class="play-button">
+
+                </div>
+              </div>     -->
+          </div>
+          <div>
+            <div class="col-lg-12 no-padding">
+                <div class="box-shadow">
+                  <p data-ref="head.description">
+فعالیت محلی باهمستان فعالیتی محل محور است که بر پایه اصول بنیادین مشارکت، مقاومت و ممارست بنا شده است. ماموریت نهایی پروژه کار محلی باهمستان فعال سازی ساکنان در امور محلی است. در این راستا، باهمستان در نظر دارد تا با اجرای این فعالیت در محله‌ای خاص فضایی را فراهم آورد که در آن شهرمندان از گروه‌های سنی، جنسی، نژادی، ملی، قومیتی متفاوت، به ویژه گروه‌های به حاشیه رانده شده و آسیب پذیر، به ابراز نظر، ایفای نقش و کنشگری در رابطه با محیط زندگیشان بپردازند. باهمستان برای اجرای فعالیت محلی، محله پاسگاه نعمت آباد واقع در منطقه ۱۹ تهران را انتخاب نموده و در نظر دارد به عنوان عاملی محلی در این محل به طور بلند مدت حضور یابد و در طی فرآیند اجرا نقش تسهیل گر مشارکت عمومی و می‌انجی گر بین گروه‌های مختلف را به منظور پیشبرد اهداف تعیین شده توسط ساکنان محلی و برطرف کردن مسائل محلی ایفا نماید. 
+                    </p>
+                  <div class="text-right">
+                      <a class="btn btn-link btn-lg" href="#">مطالعه طرح کارگروه</a>
+                      <!-- <a class="btn btn-primary btn-lg">پیوستن به کارگروه</a>   -->
+                  </div>    
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    <section class="current-projects">
+      <br>
+      <br>
+      <div class="container">
+        <h4>اقدامات جاری</h4>
+        <div class="row">
+          <!--<div class="col-lg col-md-6">
+            <div class="box-shadow">
+                <h5 data-ref="currentProjects[0].title"></h5>
+                <p data-ref="currentProjects[0].description"></p>
+                <a class="btn btn-link btn-sm" href="#" data-ref="currentProjects[0].link">بیشتر بخوانید</a>
+            </div>
+            <br>
+          </div>
+          <div class="col-lg col-md-6">
+            <div class="box-shadow">
+              <h5 data-ref="currentProjects[0].title"></h5>
+              <p data-ref="currentProjects[0].description"></p>
+              <a class="btn btn-link btn-sm" href="#" data-ref="currentProjects[0].link">بیشتر بخوانید</a>
+            </div>  
+            <br>
+          </div>
+          <div class="col-lg col-md-6">
+            <div class="box-shadow">
+              <h5 data-ref="currentProjects[0].title"></h5>
+              <p data-ref="currentProjects[0].description"></p>
+              <a class="btn btn-link btn-sm" href="#" data-ref="currentProjects[0].link">بیشتر بخوانید</a>
+            </div>
+          </div>-->
+          <br>
+        </div>
+      </div> 
+    </section>
+    <br>
+    <br>
+    <!-- Vertical Timeline -->
+    <section id="conference-timeline" class="container">
+
+      <div class="timeline-start">پیشینه فعالیت‌های کارگروه</div>
+      <div class="conference-center-line"></div>
+      <div class="conference-timeline-content">
+        <!-- Article -->
+        <div class="timeline-article">
+{% for post in site.categories.pasgah %}
+    {% assign mod = forloop.index | modulo: 2 %}
+    {% if mod == 0 %}
+            <div class="content-left-container">
+                <div class="box-shadow">
+                  <h5>{{ post.title }}</h5>
+                  <img src="{{ BASE_PATH }}{{ post.thumbnail }}" class="timeline-img">
+                  <p>{{ post.content | strip_html | truncatewords:30 }}</p>
+                  <div class="clearfix">
+                      <span class=" text-disabled float-left">{{ post.date | date: "%-d %B %Y"}}</span>
+                        <a href="{{ BASE_PATH }}{{ post.url }}" class="btn btn-link float-right">بیشتر بخوانید</a>
+                  </div>    
+                </div>
+              </div>
+                        <div style="clear: both"></div>
+
+    {% else %}
+             <div class="content-right-container">
+                <div class="box-shadow">
+                  <h5>{{ post.title }}</h5>
+                  <img src="{{ BASE_PATH }}{{ post.thumbnail }}" class="timeline-img">
+                  <p>{{ post.content | strip_html | truncatewords:30 }}</p>
+                  <div class="clearfix">
+                      <span class=" text-disabled float-left">{{ post.date | date: "%-d %B %Y"}}</span>
+                        <a href="{{ BASE_PATH }}{{ post.url }}" class="btn btn-link float-right">بیشتر بخوانید</a>
+                  </div>    
+                </div>
+                  </div> 
+     {% endif %}
+                <div class="meta-date"></div>
+        
+{% endfor %}
+          </div>
+          <!-- // Article -->
+        
+        </div>
+      <div class="timeline-end">تشکیل کارگروه: پاییز ۹۴</div>
+    </section>
+<div class="blank-space"></div>
+    <section class="current-projects">
+      <div class="container">
+        <h4>فعالیت‌های مرتبط باهمستان پیش از تشکیل کارگروه</h4>
+        <div class="row">
+        {% for post in site.posts %}    
+{% if post.tags contains 'محلی' %}
+
+            <div class="col-md-4">
+                <div class="box-shadow no-padding">
+                    <a href="{{ BASE_PATH }}{{ post.url }}" class="home-post-thumbnail" style="background-image: url('{{ BASE_PATH }}{{ post.thumbnail }}');">
+                        <div class="home-post-title">
+                            <h4>{{ post.title }}</h4>
+                            <h6>{{ post.date | date: "%-d %B %Y"}}</h6>
+                        </div>
+                    </a>
+                    <div class="home-post-text">
+                        <p>{{ post.content | strip_html | truncatewords:30 }} </p>
+                        <a class="btn btn-link btn-sm" href="{{ BASE_PATH }}{{ post.url }}">بیشتر</a>
+                    </div>
+                </div>
+            </div>
+{% endif %}
+        {% endfor %}
+        </div>
+      </div> 
+    </section>    
+<section id="join_wg">
+    <div class="blank-space"></div>
+    <div class="container">
+        <div class="row" >
+            <h3>پیوستن به کارگروه محلی</h3>
+        </div>
+     <div id="join-form-button">    
+      <form 
+            action="https://formspree.io/xzbpyyvw"
+            method="POST"
+            id="join-form"
+            enctype="multipart/form-data"
+        >
+      <div class="row">
+        <div class="col-md-3">
+          <label for="fname">نام</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" id="fname" name="firstname" placeholder="نام شما.." required oninvalid="this.setCustomValidity('لطفاً نام خود را وارد کنید.')">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="lname">نام خانوادگی</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" id="lname" name="lastname" placeholder="نام خانوادگی شما.." required oninvalid="this.setCustomValidity('لطفا نام خانوادگی خود را وارد کنید.')">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="email">آدرس ایمیل</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" id="email" name="_replyto" placeholder="آدرس ایمیل شما.." required oninvalid="this.setCustomValidity('لطفاً آدرس ایمیل خود را وارد کنید.')">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="phone">شماره تماس</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" id="phone" name="phone" placeholder="شماره تماس شما.." required oninvalid="this.setCustomValidity('لطفاً شماره تماس خود را وارد کنید.')">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="description">شرح مختصر</label>
+        </div>
+        <div class="col-md-9">
+          <textarea id="subject" name="description" placeholder="از علاقه‌مندی‌ها، تجارب، تحصیلات و مشترک شما با کارگروه .." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="resume">رزومه</label>
+        </div>
+        <div class="col-md-9">
+          <input type="file" id="resume" name="upload">
+        </div>
+      </div>
+      <div class="row">
+          <input type="submit" value="ثبت">
+      </div>
+      </form>
+    </div>     
+      <p id="join-form-status"></p>
+    </div>
+
+</section>

@@ -1,0 +1,215 @@
+---
+title: کارگروه عابر پیاده و دوچرخه
+layout: default
+---
+
+    <div class="container">
+        <div class="header">
+          <div class="">
+              <div class="col-lg-12 no-padding">
+                <a href="/wg-neshast.html" class="page-post-thumbnail" style="background-image: url('/assets/img/wg-pido-thumbnail.png');">
+                        <div class="page-post-title">
+                          <h1>کارگروه عابرپیاده و دوچرخه</h1>
+                          <h2>با هم حق پیاده در شهر را مطالبه می‌کنیم</h2>  
+                        </div>
+                    </a>                    
+              </div>
+              <!-- <div class="col-lg-4">
+                <div class="play-button">
+
+                </div>
+              </div>     -->
+          </div>
+          <div>
+            <div class="col-lg-12 no-padding">
+                <div class="box-shadow">
+                  <p data-ref="head.description">
+ این کارگروه، اولین جلسه رسمی خود را در ۲۶ شهریور ۹۶ تشکیل داد. تمرکز اصلی کارگروه روی تضمین حق عابر پیاده به عنوان یک گروه به حاشیه‌رانده شده در فرآیند توسعه شهر و نیز مطرح کردن شهر انسان‌محور در برابر شهر ماشین‌محور است. موضوع حق پیاده در شهر، از مسایل اصلی مورد توجه باهمستان از ابتدای فعالیتش بوده و این کارگروه در راستای پیگیری مطالبات بر زمین مانده از گذشته و همچنین اولویت انتخاب شده توسط اعضا در مجمع عمومی تشکیل شده است. دو پروژه اصلی این کارگروه، چهارراه ولیعصر و تشکیل کمیته پیاده و دوچرخه در شورای شهر است. کار محلی باهمستان
+                    </p>
+                  <div class="text-right">
+                      <a class="btn btn-link btn-lg" href="#">مطالعه طرح کارگروه</a>
+                      <!-- <a class="btn btn-primary btn-lg">پیوستن به کارگروه</a>   -->
+                  </div>    
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    <section class="current-projects">
+      <br>
+      <br>
+      <div class="container">
+        <h4>اقدامات جاری</h4>
+        <div class="row">
+          <!--<div class="col-lg col-md-6">
+            <div class="box-shadow">
+                <h5 data-ref="currentProjects[0].title"></h5>
+                <p data-ref="currentProjects[0].description"></p>
+                <a class="btn btn-link btn-sm" href="#" data-ref="currentProjects[0].link">بیشتر بخوانید</a>
+            </div>
+            <br>
+          </div>
+          <div class="col-lg col-md-6">
+            <div class="box-shadow">
+              <h5 data-ref="currentProjects[0].title"></h5>
+              <p data-ref="currentProjects[0].description"></p>
+              <a class="btn btn-link btn-sm" href="#" data-ref="currentProjects[0].link">بیشتر بخوانید</a>
+            </div>  
+            <br>
+          </div>
+          <div class="col-lg col-md-6">
+            <div class="box-shadow">
+              <h5 data-ref="currentProjects[0].title"></h5>
+              <p data-ref="currentProjects[0].description"></p>
+              <a class="btn btn-link btn-sm" href="#" data-ref="currentProjects[0].link">بیشتر بخوانید</a>
+            </div>
+          </div>-->
+          <br>
+        </div>
+      </div> 
+    </section>
+    <br>
+    <br>
+    <!-- Vertical Timeline -->
+    <section id="conference-timeline" class="container">
+
+      <div class="timeline-start">پیشینه فعالیت‌های کارگروه</div>
+      <div class="conference-center-line"></div>
+      <div class="conference-timeline-content">
+        <!-- Article -->
+        <div class="timeline-article">
+{% for post in site.categories.pido %}
+    {% assign mod = forloop.index | modulo: 2 %}
+    {% if mod == 0 %}
+            <div class="content-left-container">
+                <div class="box-shadow">
+                  <h5>{{ post.title }}</h5>
+                  <img src="{{ BASE_PATH }}{{ post.thumbnail }}" class="timeline-img">
+                  <p>{{ post.content | strip_html | truncatewords:30 }}</p>
+                  <div class="clearfix">
+                      <span class=" text-disabled float-left">{{ post.date | date: "%-d %B %Y"}}</span>
+                        <a href="{{ BASE_PATH }}{{ post.url }}" class="btn btn-link float-right">بیشتر بخوانید</a>
+                  </div>    
+                </div>
+              </div>
+                        <div style="clear: both"></div>
+
+    {% else %}
+             <div class="content-right-container">
+                <div class="box-shadow">
+                  <h5>{{ post.title }}</h5>
+                  <img src="{{ BASE_PATH }}{{ post.thumbnail }}" class="timeline-img">
+                  <p>{{ post.content | strip_html | truncatewords:30 }}</p>
+                  <div class="clearfix">
+                      <span class=" text-disabled float-left">{{ post.date | date: "%-d %B %Y"}}</span>
+                        <a href="{{ BASE_PATH }}{{ post.url }}" class="btn btn-link float-right">بیشتر بخوانید</a>
+                  </div>    
+                </div>
+                  </div> 
+     {% endif %}
+                <div class="meta-date"></div>
+        
+{% endfor %}
+          </div>
+          <!-- // Article -->
+        
+        </div>
+      <div class="timeline-end">تشکیل کارگروه: زمستان ۹۴</div>
+    </section>
+<div class="blank-space"></div>
+    <section class="current-projects">
+      <div class="container">
+        <h4>فعالیت‌های مرتبط باهمستان پیش از تشکیل کارگروه</h4>
+        <div class="row">
+        {% for post in site.posts %}    
+{% if post.tags contains 'کارپیدو' %}
+
+            <div class="col-md-4">
+                <div class="box-shadow no-padding">
+                    <a href="{{ BASE_PATH }}{{ post.url }}" class="home-post-thumbnail" style="background-image: url('{{ BASE_PATH }}{{ post.thumbnail }}');">
+                        <div class="home-post-title">
+                            <h4>{{ post.title }}</h4>
+                            <h6>{{ post.date | date: "%-d %B %Y"}}</h6>
+                        </div>
+                    </a>
+                    <div class="home-post-text">
+                        <p>{{ post.content | strip_html | truncatewords:30 }} </p>
+                        <a class="btn btn-link btn-sm" href="{{ BASE_PATH }}{{ post.url }}">بیشتر</a>
+                    </div>
+                </div>
+            </div>
+{% endif %}
+        {% endfor %}
+        </div>
+      </div> 
+    </section>    
+<section id="join_wg">
+    <div class="blank-space"></div>
+    <div class="container">
+        <div class="row">
+            <h3>پیوستن به کارگروه عابرپیاده و دوچرخه</h3>
+        </div>
+     <div id="join-form-button">    
+      <form 
+            action="https://formspree.io/xdonyyzp"
+            method="POST"
+            id="join-form"
+            enctype="multipart/form-data"
+        >
+      <div class="row">
+        <div class="col-md-3">
+          <label for="fname">نام</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" id="fname" name="firstname" placeholder="نام شما.." required oninvalid="this.setCustomValidity('لطفاً نام خود را وارد کنید.')">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="lname">نام خانوادگی</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" id="lname" name="lastname" placeholder="نام خانوادگی شما.." required oninvalid="this.setCustomValidity('لطفا نام خانوادگی خود را وارد کنید.')">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="email">آدرس ایمیل</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" id="email" name="_replyto" placeholder="آدرس ایمیل شما.." required oninvalid="this.setCustomValidity('لطفاً آدرس ایمیل خود را وارد کنید.')">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="phone">شماره تماس</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" id="phone" name="phone" placeholder="شماره تماس شما.." required oninvalid="this.setCustomValidity('لطفاً شماره تماس خود را وارد کنید.')">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="description">شرح مختصر</label>
+        </div>
+        <div class="col-md-9">
+          <textarea id="subject" name="description" placeholder="از علاقه‌مندی‌ها، تجارب، تحصیلات و مشترک شما با کارگروه .." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="resume">رزومه</label>
+        </div>
+        <div class="col-md-9">
+          <input type="file" id="resume" name="upload">
+        </div>
+      </div>
+      <div class="row">
+          <input type="submit" value="ثبت">
+      </div>
+      </form>
+    </div>     
+      <p id="join-form-status"></p>
+    </div>
+
+</section>
