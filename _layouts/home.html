@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+    <!--link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/index.css">-->
+    <meta id="page-data-url" data-url="/data/structure.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+    <title></title>
+  </head>
+  <body>
+      {% include header.html %}
+
+    <header>
+      <div class="landing-header" style="">
+        <video class="bg-video" autoplay muted loop id="bg-video">
+          <source src="https://hw3.cdn.asset.aparat.com/aparat-video/82b989f1a537faf54f24897a01c752a711627714-360p__98267.mp4" type="video/mp4">
+        </video>
+        <div class="video-control" id="bg-video-control" data-status="mute">
+          <div class="control-text">
+            <span>
+                صدای مردمان شهر را بشنویم&nbsp;&nbsp;
+            </span>
+          </div>
+          <i class="fa fa-volume-up fa-lg" aria-hidden="true"></i>
+        </div>
+        <div class="tagline">
+          <h1>تغییر،<br>با همصدا شدن<br>آغاز می‌شود</h1>
+          <br>
+          <br>
+          <a href="#" class="btn btn-lg btn-white-primary">به باهمستان بپیوندید</a>
+          <br>
+          <br>
+          <div class="d-lg-none  d-md-none  d-xl-none  d-sm-block d-xs-block">
+            <a href="#" class="btn btn-white-link">
+              <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+              مشاهده‌ی ویدیو‌ی معرفی باهمستان
+            </a>
+          </div>
+        </div>
+        <div class="border-button">
+        </div>
+      </div>
+      <div class="container">
+        <!-- <div class="header">
+          <div class="">
+              <div class="col-lg-12 no-padding">
+                  <h1 data-ref="head.title"></h1>
+                  <h2 data-ref="head.slogan"></h2>  
+                  <br>  
+              </div>
+              <div class="col-lg-4">
+                <div class="play-button">
+    
+                </div>
+              </div>
+          </div>
+          <div>
+            <div class="col-lg-12 no-padding">
+                <div class="box-shadow">
+                  <p data-ref="head.description"></p>
+                </div>
+              </div>
+          </div>
+        </div> -->
+      </div>
+    </header>
+
+    {{ content }}
+    {% include join_us.html %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+    <script src="/assets/js/index.js"></script>
+
+  </body>
+</html>
+
+
+
