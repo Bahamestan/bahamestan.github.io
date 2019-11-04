@@ -1,0 +1,46 @@
+---
+title: عضویت
+layout: default
+---
+
+<section>
+    <div class="blank-space"></div>
+    <div class="container">
+        <div class="row" >
+            <h3>پیوستن به کارگروه محلی</h3>
+        </div>
+     <div id="join-form-button">    
+      <form 
+            action="https://pay.ir/pg/share/send"
+            method="POST"
+        >
+   
+      <div class="row">
+        <div class="col-md-3">
+          <label for="mobile">شماره تماس</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" id="mobile" name="mobile" placeholder="شماره تماس شما.." required oninvalid="this.setCustomValidity('لطفاً شماره تماس خود را وارد کنید.')">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="amount">مبلغ</label>
+        </div>
+        <div class="col-md-9">
+          <input type="number" id="amount" name="amount" placeholder="مبلغ پرداختی شما.." required oninvalid="this.setCustomValidity('لطفاً شماره تماس خود را وارد کنید.')">
+        </div>
+      </div>
+
+
+      <div class="row">
+    <input type="hidden" name="api" value="test">
+    <input type="hidden" name="redirect" value="http://bahamestan.ir">
+          <input type="submit" value="ثبت">
+      </div>
+      </form>
+    </div>     
+      <p id="join-form-status"></p>
+    </div>
+
+</section>
