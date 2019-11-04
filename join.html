@@ -10,9 +10,10 @@ layout: default
             <h3>پیوستن به کارگروه محلی</h3>
         </div>
      <div id="join-form-button">    
-      <form enctype="application/json" 
+      <form 
             action="https://pay.ir/pg/share/send"
-            method="POST"            
+            method="POST"
+            id="joinform"
         >
    
       <div class="row">
@@ -47,3 +48,18 @@ layout: default
     </div>
 
 </section>
+<script>
+    $(document).ready(function(){
+        // click on button submit
+        $("#submit").on('click', function(){
+            // send ajax
+            $.ajax({
+                url: 'https://pay.ir/pg/send', // url where to submit the request
+                type : "POST", // type of action POST || GET
+                dataType : 'json', // data type
+                data : $("#joinform").serialize(), // post data || get data
+            })
+        });
+    });
+
+</script>
