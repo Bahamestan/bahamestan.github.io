@@ -11,6 +11,7 @@ layout: default
         </div>
      <div id="join-form-button">    
       <form 
+<<<<<<< HEAD
             action="/send.php"
             method="POST"
         >
@@ -44,6 +45,18 @@ layout: default
         </div>
         <div class="col-md-9">
           <input type="text" id="phone" name="phone" placeholder="شماره تماس شما.." required oninvalid="this.setCustomValidity('لطفاً شماره تماس خود را وارد کنید.')">
+=======
+            action="https://pay.ir/pg/share/send"
+            method="POST"
+        >
+   
+      <div class="row">
+        <div class="col-md-3">
+          <label for="mobile">شماره تماس</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" id="mobile" name="mobile" placeholder="شماره تماس شما.." required oninvalid="this.setCustomValidity('لطفاً شماره تماس خود را وارد کنید.')">
+>>>>>>> dev
         </div>
       </div>
       <div class="row">
@@ -51,6 +64,7 @@ layout: default
           <label for="amount">مبلغ</label>
         </div>
         <div class="col-md-9">
+<<<<<<< HEAD
           <input type="number" id="ammount" name="ammount" placeholder="مبلغ پرداختی شما.." required oninvalid="this.setCustomValidity('لطفاً شماره تماس خود را وارد کنید.')">
         </div>
       </div>
@@ -71,6 +85,16 @@ layout: default
         </div>
       </div>
       <div class="row">
+=======
+          <input type="number" id="amount" name="amount" placeholder="مبلغ پرداختی شما.." required oninvalid="this.setCustomValidity('لطفاً شماره تماس خود را وارد کنید.')">
+        </div>
+      </div>
+
+
+      <div class="row">
+    <input type="hidden" name="api" value="test">
+    <input type="hidden" name="redirect" value="http://bahamestan.ir">
+>>>>>>> dev
           <input type="submit" value="ثبت">
       </div>
       </form>
@@ -78,4 +102,8 @@ layout: default
       <p id="join-form-status"></p>
     </div>
 
+<<<<<<< HEAD
 </section>
+=======
+</section>
+>>>>>>> dev
