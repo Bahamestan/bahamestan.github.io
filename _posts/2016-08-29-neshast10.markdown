@@ -1,6 +1,7 @@
 ---
 title: 'نشست دهم: پرس و جو پیرامون مسائل محله اسلام آباد'
 layout: post
+permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/neshast10-thumbnail.jpg"
 categories:
 - neshast

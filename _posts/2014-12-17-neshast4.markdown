@@ -1,6 +1,7 @@
 ---
 title: 'نشست چهارم: فضاهای شهری و خشونت ساختاری علیه زنان'
 layout: post
+permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/neshast4-thumbnail.jpg"
 categories:
 - exec

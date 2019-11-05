@@ -1,6 +1,7 @@
 ---
 title: 'نشست ششم: نقش شورای شهر و انتخاب مستقیم شهردار'
 layout: post
+permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/neshast6-thumbnail.jpg"
 categories:
 - neshast

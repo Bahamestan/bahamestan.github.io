@@ -1,6 +1,7 @@
 ---
 title: 'نشست اول: نقد و بررسی زیرگذر چهارراه ولیعصر'
 layout: post
+permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/neshast1-thumbnail.jpg"
 categories:
 - exec

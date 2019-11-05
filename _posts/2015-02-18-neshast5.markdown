@@ -1,6 +1,7 @@
 ---
 title: 'نشست پنجم: حق عابر پیاده و مسئله پل عابر'
 layout: post
+permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/neshast5-thumbnail.jpg"
 categories:
 - exec

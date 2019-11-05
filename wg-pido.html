@@ -1,6 +1,8 @@
 ---
 title: کارگروه عابر پیاده و دوچرخه
 layout: default
+permalink: /pido/
+
 ---
 
     <div class="container">
@@ -87,7 +89,13 @@ layout: default
                   <img src="{{ BASE_PATH }}{{ post.thumbnail }}" class="timeline-img">
                   <p>{{ post.content | strip_html | truncatewords:30 }}</p>
                   <div class="clearfix">
-                      <span class=" text-disabled float-left">{{ post.date | date: "%-d %B %Y"}}</span>
+                      <span class=" text-disabled float-left" id="{{ post.date}}">{{ post.date}}</span>
+						<script>
+							var date = '{{ post.date  }}'
+								moment.loadPersian(true);
+								var jalaliDate = moment(date, 'YYYY-M-D HH:mm:ss TZD').format('ddd jD jMMMM jYYYY');
+								document.getElementById('{{ post.date}}').innerText = jalaliDate
+						</script>
                         <a href="{{ BASE_PATH }}{{ post.url }}" class="btn btn-link float-right">بیشتر بخوانید</a>
                   </div>    
                 </div>
@@ -101,7 +109,13 @@ layout: default
                   <img src="{{ BASE_PATH }}{{ post.thumbnail }}" class="timeline-img">
                   <p>{{ post.content | strip_html | truncatewords:30 }}</p>
                   <div class="clearfix">
-                      <span class=" text-disabled float-left">{{ post.date | date: "%-d %B %Y"}}</span>
+                      <span class=" text-disabled float-left" id="{{ post.date}}">{{ post.date}}</span>
+						<script>
+							var date = '{{ post.date  }}'
+								moment.loadPersian(true);
+								var jalaliDate = moment(date, 'YYYY-M-D HH:mm:ss TZD').format('ddd jD jMMMM jYYYY');
+								document.getElementById('{{ post.date}}').innerText = jalaliDate
+						</script>
                         <a href="{{ BASE_PATH }}{{ post.url }}" class="btn btn-link float-right">بیشتر بخوانید</a>
                   </div>    
                 </div>
@@ -129,7 +143,13 @@ layout: default
                     <a href="{{ BASE_PATH }}{{ post.url }}" class="home-post-thumbnail" style="background-image: url('{{ BASE_PATH }}{{ post.thumbnail }}');">
                         <div class="home-post-title">
                             <h4>{{ post.title }}</h4>
-                            <h6>{{ post.date | date: "%-d %B %Y"}}</h6>
+                            <h6 id="{{ post.date}}">{{ post.date }}</h6>
+							<script>
+								var date = '{{ post.date  }}'
+									moment.loadPersian(true);
+									var jalaliDate = moment(date, 'YYYY-M-D HH:mm:ss TZD').format('ddd jD jMMMM jYYYY');
+									document.getElementById('{{ post.date}}').innerText = jalaliDate
+							</script>
                         </div>
                     </a>
                     <div class="home-post-text">

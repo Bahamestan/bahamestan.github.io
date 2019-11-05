@@ -1,6 +1,7 @@
 ---
 title: 'باهم به استقبال بهار'
 layout: post
+permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/96esfand-thumbnail.jpg"
 categories:
 - pasgah

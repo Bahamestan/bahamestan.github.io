@@ -1,6 +1,7 @@
 ---
 title: 'رویداد کوچه بهتر'
 layout: post
+permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/91esfand-thumbnail.jpg"
 categories:
 - exec

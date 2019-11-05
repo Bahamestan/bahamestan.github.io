@@ -1,6 +1,7 @@
 ---
 title: 'نشست دوم: تکرار زیرگذر چهارراه ولیعصر'
 layout: post
+permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/neshast2-thumbnail.jpg"
 categories:
 - exec

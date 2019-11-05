@@ -1,6 +1,7 @@
 ---
 title: 'نشست سوم: پدیده دست‌فروشی در شهر'
 layout: post
+permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/neshast3-thumbnail.jpg"
 categories:
 - exec

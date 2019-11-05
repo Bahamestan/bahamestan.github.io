@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
       <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-    
+    <script src="/assets/js/moment.js"></script>
+    <script src="/assets/js/moment-jalaali.js"></script>
     <title>{{ page.title }}</title>
   </head>
   <body>
@@ -20,7 +21,7 @@
                 <a href="{{ BASE_PATH }}{{ page.url }}" class="page-post-thumbnail" style="background-image: url('{{ BASE_PATH }}{{ page.thumbnail }}');">
                         <div class="page-post-title">
                             <h1>{{ page.title }}</h1>
-                            <h6>{{ page.date | date: "%-d %B %Y"}}</h6>
+                            <h6 id="date">{{ page.date }}</h6>
                         </div>
                     </a>
             </div>
@@ -41,6 +42,12 @@
              <div id="commento"></div>
         </div>
     </div>
+    <script>
+		var date = '{{ page.date  }}'
+			moment.loadPersian(true);
+			var jalaliDate = moment(date, 'YYYY-M-D HH:mm:ss TZD').format('ddd jD jMMMM jYYYY');
+			document.getElementById("date").innerText = jalaliDate
+	</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

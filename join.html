@@ -1,6 +1,7 @@
 ---
 title: عضویت
 layout: default
+permalink: /join/
 ---
 
 <section>
@@ -9,37 +10,52 @@ layout: default
         <div class="row" >
             <h3>پیوستن به کارگروه محلی</h3>
         </div>
-     <div id="join-form-button">    
+     <div id="join-form-button"> 
       <form 
-            action=""
+            action="http://merchant.arianpal.com/postservice/"
             method="POST"
-            id="joinform"
+            id="TransactionForm"
         >
-   
+        <input type="hidden" id="MerchantID" value="4154105" name="MerchantID"/>
+        <input type="hidden" id="Password" value="sWTqFAknH" name="Password"/>
       <div class="row">
         <div class="col-md-3">
-          <label for="mobile">شماره تماس</label>
+          <label for="Paymenter">نام و نام خانوادگی</label>
         </div>
         <div class="col-md-9">
-          <input type="text" id="mobile" name="mobile" placeholder="شماره تماس شما.." oninvalid="this.setCustomValidity('لطفاً شماره تماس خود را وارد کنید.')">
+          <input type="text" name="Paymenter" placeholder="نام و نام خانوادگی خود را وارد کنید.." required oninvalid="this.setCustomValidity('لطفاً نام و نام خانوادگی خود را وارد کنید.')">
         </div>
       </div>
       <div class="row">
         <div class="col-md-3">
-          <label for="amount">مبلغ</label>
+          <label for="Mobile">شماره تماس</label>
         </div>
         <div class="col-md-9">
-          <input type="number" id="amount" name="amount" placeholder="مبلغ پرداختی شما.." required oninvalid="this.setCustomValidity('لطفاً شماره تماس خود را وارد کنید.')">
+          <input type="text" name="Mobile" placeholder="شماره تماس خود را وارد کنید..." oninvalid="this.setCustomValidity('لطفاً شماره تماس خود را وارد کنید.')">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="Email">ایمیل</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" name="Email" placeholder="آدرس ایمیل خود را وارد کنید..." oninvalid="this.setCustomValidity('لطفاً آدرس ایمیل خود را وارد کنید.')">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="Price">مبلغ</label>
+        </div>
+        <div class="col-md-9">
+          <input type="number" name="Price" placeholder="مبلغ پرداختی شما.." required oninvalid="this.setCustomValidity('لطفاً شماره تماس خود را وارد کنید.')">
         </div>
       </div>
 
 
       <div class="row">
-          <input type="text" hidden id="api" name="api" value="7546a21626088bcf583cdee67b358ca2">
-          <input type="text" hidden id="redirect" name="redirect" value="http%3A%2F%2Fbahamestan.ir%2Fjoin.html">
-          <input type="text" hidden id="factorNumber" name="factorNumber" value="">
-          <input type="text" hidden id="description" name="description" value="">
-          <input type="text" hidden id="validCardNumber" name="validCardNumber" value="">
+	<input type="hidden" id="ResNumber" value="0" name="ResNumber"/>
+	<input type="hidden" id="Description" value="خرید" name="Description"/>
+	<input type="hidden" id="ReturnPath" value="http://bahamestan.ir/join" name="ReturnPath" />
           <input id="submit" type="submit" value="ثبت">
       </div>
       </form>
@@ -48,18 +64,3 @@ layout: default
     </div>
 
 </section>
-<script>
-    $(document).ready(function(){
-        // click on button submit
-        $("#submit").on('click', function(){
-            // send ajax
-            $.ajax({
-                url: 'https://pay.ir/pg/send', // url where to submit the request
-                type : "POST", // type of action POST || GET
-                dataType : 'json', // data type
-                data : $("#joinform").serialize(), // post data || get data
-            })
-        });
-    });
-
-</script>

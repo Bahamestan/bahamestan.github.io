@@ -1,6 +1,7 @@
 ---
 title: 'نشست نهم: تقابل حضور خیابان خواب‌ها در شهر'
 layout: post
+permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/neshast9-thumbnail.jpg"
 categories:
 - neshast

@@ -1,6 +1,7 @@
 ---
 title: 'رویداد شهر بدون مانع'
 layout: post
+permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/96azar-thumbnail.png"
 categories:
 - pido
