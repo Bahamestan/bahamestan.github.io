@@ -1,54 +1,16 @@
 ---
 title: عضویت
-slogan: باهمصداشویم
 layout: default
 permalink: /join/
 ---
-<section class="current-projects">
-    <div class="container">
-        <div class="header">
-          <div class="">
-              <div class="col-lg-12 no-padding">
-                <a href="/join/" class="page-post-thumbnail" style="background-image: url('/assets/img/join-thumbnail.jpg');">
-                        <div class="page-post-title">
-                         <h1>{{ page.title }} </h1>
-                          <h4>{{ page.slogan }}</h4>  
-                        </div>
-                    </a>                    
-              </div>
-          </div>
-        </div>
-      </div>
-</section>
-<section class="members">
-  <div class="container">
-      <div class="box-shadow">
-        <div class="row">
-          <div class="col-md-6">
-   	        <h4>نقش اعضا در باهمستان</h4>
-            <p>
-                باهمستان متعلق به اعضای خود است و اعضا با عضویت در باهمستان به این سازمان نمایندگی می‌دهند تا پیگیر اهداف و اولویت‌های تعیین شده توسط خودشان در مجامع عمومی سالیانه باهمستان باشند. 
-            </p>
-			<ul>
-				<li>رده‌بندی عضویت: در اساسنامه باهمستان تنها عضویت اصلی تعریف شده است رده بندی عضویت در باهمستان صرفاً بر اساس توانایی و تمایل اعضا برای حمایت مالی در سطوح مختلف تعریف شده است و هیچ گونه مزایا و امتیاز ویژه‌ای برای رده‌ی خاصی از عضویت وجود ندارد.</li>
-			</ul>	
-            <!-- <a class="btn btn-link btn-sm" href="#" data-ref="members.link">بیشتر بخوانید</a> --> 
-          </div>
-          <div class="col-md-6">
 
-            <div id="3082095400"><script type="text/JavaScript"src="https://www.aparat.com/embed/BiOKS?data[rnddiv]=3082095400&data[responsive]=yes"></script></div>
-
-          </div>
-        </div>    
-      </div>
-    </div>
-  </div>
-</section>
 <section>
     <div class="blank-space"></div>
     <div class="container">
+        <div class="row" >
+            <h3>پیوستن به کارگروه محلی</h3>
+        </div>
      <div id="join-form-button"> 
-		<h4>فرم عضویت:</h4>
       <form 
             action="http://merchant.arianpal.com/postservice/"
             method="POST"
@@ -82,22 +44,19 @@ permalink: /join/
       </div>
       <div class="row">
         <div class="col-md-3">
-          <label for="Price">نوع عضویت</label>
+          <label for="Price">مبلغ</label>
         </div>
         <div class="col-md-9">
-			<input type="radio" id="student" name="Price" value="50000"><label for="student"> دانشجویی (با حق عضویت ۵۰ هزار تومان) </label><br>
-			<input type="radio" id="hamgaman" name="Price" value="100000" checked><label for="hamgaman"> همگامان باهمستان (با حق عضویت ۱۰۰ هزار تومان)</label><br>
-			<input type="radio" id="hamrahan" name="Price" value="250000"><label for="hamrahan"> همراهان باهمستان (با حق عضویت ۲۵۰ هزار تومان)</label><br>
-			<input type="radio" id="hamyaran" name="Price" value="1000000"><label for="hamyaran"> همیاران باهمستان (با حق عضویت یک میلیون تومان)</label>
+          <input type="number" name="Price" placeholder="مبلغ پرداختی شما.." required oninvalid="this.setCustomValidity('لطفاً شماره تماس خود را وارد کنید.')">
         </div>
       </div>
 
 
       <div class="row">
 	<input type="hidden" id="ResNumber" value="0" name="ResNumber"/>
-	<input type="hidden" id="Description" value="پرداخت حق عضویت" name="Description"/>
-	<input type="hidden" id="ReturnPath" value="http://bahamestan.ir/join/" name="ReturnPath" />
-          <input id="submit" type="submit" value="پرداخت">
+	<input type="hidden" id="Description" value="خرید" name="Description"/>
+	<input type="hidden" id="ReturnPath" value="http://bahamestan.ir/join" name="ReturnPath" />
+          <input id="submit" type="submit" value="ثبت">
       </div>
       </form>
     </div>     
