@@ -10,12 +10,12 @@ permalink: /neshastwg/
         <div class="header">
           <div class="">
               <div class="col-lg-12 no-padding">
-                <a href="/wg-neshast.html" class="page-post-thumbnail" style="background-image: url('/assets/img/neshast10-thumbnail.jpg');">
+                <a href="{{ page.permalink }}" class="page-post-thumbnail" style="background-image: url('/assets/img/neshast10-thumbnail.jpg');">
                         <div class="page-post-title">
                          <h1>{{ page.title }} </h1>
-                          <h4>{{ page.slogan }}</h4>  
+                          <h4>{{ page.slogan }}</h4>
                         </div>
-                    </a>                    
+                    </a>
               </div>
               <!-- <div class="col-lg-4">
                 <div class="play-button">
@@ -27,12 +27,12 @@ permalink: /neshastwg/
             <div class="col-lg-12 no-padding">
                 <div class="box-shadow">
                   <p data-ref="head.description">
-                  باهمستان از فروردین سال ۱۳۹۳ سلسله نشست‌های مدنی حق بر شهر را با هدف  گفتگو پیرامون مفهوم «حق بر شهر» در پیوند با مسائل روزمره و موضوعات روز شهری در ایران و ایجاد فضای گفتگو بین نظریه‌پردازان، متخصصان، مدیران و کنش‌گران شهری، نمایندگان مردم در شهر و روزنامه‌نگاران شروع کرد. بعد از برگزاری پنج نشست توسط تیم اجرایی باهمستان از نشست ششم کارگروه نشست شامل داوطلبان تشکیل شد و تا بهار ۹۶ که اعضا گروه تصمیم گرفتند که به کار کارگروه پایان دهند پنج نشست دیگر با موضوعات لایحه مدیریت شهری،حق افغانستانی‌ها در شهر، حق کودکان در شهر، خیابان خوابی، و محله اسلام‌آباد برگزار کرد.    
+                  باهمستان از فروردین سال ۱۳۹۳ سلسله نشست‌های مدنی حق بر شهر را با هدف  گفتگو پیرامون مفهوم «حق بر شهر» در پیوند با مسائل روزمره و موضوعات روز شهری در ایران و ایجاد فضای گفتگو بین نظریه‌پردازان، متخصصان، مدیران و کنش‌گران شهری، نمایندگان مردم در شهر و روزنامه‌نگاران شروع کرد. بعد از برگزاری پنج نشست توسط تیم اجرایی باهمستان از نشست ششم کارگروه نشست شامل داوطلبان تشکیل شد و تا بهار ۹۶ که اعضا گروه تصمیم گرفتند که به کار کارگروه پایان دهند پنج نشست دیگر با موضوعات لایحه مدیریت شهری،حق افغانستانی‌ها در شهر، حق کودکان در شهر، خیابان خوابی، و محله اسلام‌آباد برگزار کرد.
                   </p>
                   <div class="text-right">
                       <a class="btn btn-link btn-lg" href="#">مطالعه طرح کارگروه</a>
                       <!-- <a class="btn btn-primary btn-lg">پیوستن به کارگروه</a>   -->
-                  </div>    
+                  </div>
                 </div>
               </div>
           </div>
@@ -58,7 +58,7 @@ permalink: /neshastwg/
               <h5 data-ref="currentProjects[0].title"></h5>
               <p data-ref="currentProjects[0].description"></p>
               <a class="btn btn-link btn-sm" href="#" data-ref="currentProjects[0].link">بیشتر بخوانید</a>
-            </div>  
+            </div>
             <br>
           </div>
           <div class="col-lg col-md-6">
@@ -70,7 +70,7 @@ permalink: /neshastwg/
           </div>-->
           <br>
         </div>
-      </div> 
+      </div>
     </section>
     <br>
     <br>
@@ -99,7 +99,7 @@ permalink: /neshastwg/
 								document.getElementById('{{ post.date}}').innerText = jalaliDate
 						</script>
                         <a href="{{ BASE_PATH }}{{ post.url }}" class="btn btn-link float-right">بیشتر بخوانید</a>
-                  </div>    
+                  </div>
                 </div>
               </div>
                         <div style="clear: both"></div>
@@ -119,16 +119,16 @@ permalink: /neshastwg/
 								document.getElementById('{{ post.date}}').innerText = jalaliDate
 						</script>
                         <a href="{{ BASE_PATH }}{{ post.url }}" class="btn btn-link float-right">بیشتر بخوانید</a>
-                  </div>    
+                  </div>
                 </div>
-                  </div> 
+                  </div>
      {% endif %}
                 <div class="meta-date"></div>
-        
+
 {% endfor %}
           </div>
           <!-- // Article -->
-        
+
         </div>
       <div class="timeline-end">تشکیل کارگروه: زمستان ۹۴</div>
     </section>
@@ -137,7 +137,7 @@ permalink: /neshastwg/
       <div class="container">
         <h4>فعالیت‌های مرتبط باهمستان پیش از تشکیل کارگروه</h4>
         <div class="row">
-        {% for post in site.posts %}    
+        {% for post in site.posts %}
 {% if post.tags contains 'نشست' %}
 
             <div class="col-md-4">
@@ -163,5 +163,5 @@ permalink: /neshastwg/
 {% endif %}
         {% endfor %}
         </div>
-      </div> 
-    </section>    
+      </div>
+    </section>
