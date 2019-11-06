@@ -1,5 +1,6 @@
 ---
 title: کارگروه مسکن
+slogan: با هم حق مسکن را مطالبه می‌کنیم
 layout: default
 permalink: /wg-maskan/
 ---
@@ -10,8 +11,8 @@ permalink: /wg-maskan/
               <div class="col-lg-12 no-padding">
                 <a href="/wg-neshast.html" class="page-post-thumbnail" style="background-image: url('/assets/img/wg-maskan-thumbnail.jpg');">
                         <div class="page-post-title">
-                          <h1>کارگروه مسکن</h1>
-                          <h2>با هم حق مسکن را مطالبه می‌کنیم</h2>  
+                         <h1>{{ page.title }} </h1>
+                          <h4>{{ page.slogan }}</h4>  
                         </div>
                     </a>                    
               </div>
@@ -170,25 +171,17 @@ permalink: /wg-maskan/
         </div>
      <div id="join-form-button">    
       <form 
-            action="https://formspree.io/xqkzwlka"
+            action="https://formspree.io/mwkeglpj"
             method="POST"
             id="join-form"
             enctype="multipart/form-data"
         >
       <div class="row">
         <div class="col-md-3">
-          <label for="fname">نام</label>
+          <label for="name">نام و نام خانوادگی</label>
         </div>
         <div class="col-md-9">
-          <input type="text" id="fname" name="firstname" placeholder="نام شما.." required oninvalid="this.setCustomValidity('لطفاً نام خود را وارد کنید.')">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-          <label for="lname">نام خانوادگی</label>
-        </div>
-        <div class="col-md-9">
-          <input type="text" id="lname" name="lastname" placeholder="نام خانوادگی شما.." required oninvalid="this.setCustomValidity('لطفا نام خانوادگی خود را وارد کنید.')">
+          <input type="text" id="fname" name="firstname" placeholder="نام و نام خانوادگی خود را وارد کنید..." required oninvalid="this.setCustomValidity('ضروری')">
         </div>
       </div>
       <div class="row">
@@ -196,7 +189,7 @@ permalink: /wg-maskan/
           <label for="email">آدرس ایمیل</label>
         </div>
         <div class="col-md-9">
-          <input type="text" id="email" name="_replyto" placeholder="آدرس ایمیل شما.." required oninvalid="this.setCustomValidity('لطفاً آدرس ایمیل خود را وارد کنید.')">
+          <input type="text" id="email" name="_replyto" placeholder="آدرس ایمیل خود را وارد کنید..." required oninvalid="this.setCustomValidity('ضروری')">
         </div>
       </div>
       <div class="row">
@@ -204,15 +197,25 @@ permalink: /wg-maskan/
           <label for="phone">شماره تماس</label>
         </div>
         <div class="col-md-9">
-          <input type="text" id="phone" name="phone" placeholder="شماره تماس شما.." required oninvalid="this.setCustomValidity('لطفاً شماره تماس خود را وارد کنید.')">
+          <input type="text" id="phone" name="phone" placeholder="شماره تماس خود را وارد کنید..." required oninvalid="this.setCustomValidity('ضروری')">
         </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="phone">کارگروه</label>
+        </div>
+        <div class="col-md-9">
+			  <input type="checkbox" name="workgroup" value="Maskan" checked onclick="return false;"> کارگروه مسکن<br>
+			  <input type="checkbox" name="workgroup" value="PiDo"> کارگروه عابرپیاده و درچرخه<br>
+			  <input type="checkbox" name="workgroup" value="Pasgah" > کارگروه محلی<br>
+	</div>
       </div>
       <div class="row">
         <div class="col-md-3">
           <label for="description">شرح مختصر</label>
         </div>
         <div class="col-md-9">
-          <textarea id="subject" name="description" placeholder="از علاقه‌مندی‌ها، تجارب، تحصیلات و مشترک شما با کارگروه .." style="height:200px"></textarea>
+          <textarea id="subject" name="description" placeholder="مختصری از علاقه‌مندی‌ها، تجارب، تحصیلات و مشترک شما با کارگروه بنویسید..." style="height:200px"></textarea>
         </div>
       </div>
       <div class="row">
