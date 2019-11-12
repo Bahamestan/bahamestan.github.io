@@ -9,7 +9,7 @@ layout: home
     <div class="container">
         <h2 style="text-align: center;">معرفی باهمستان</h2>
         <div class="row">
-            <div style="text-align: center;" class="col-lg col-md-6">
+            <div style="text-align: center;" class="col-lg">
                 <p>باهمستان سازمانی است مردم نهاد که در راستای حمایت از حق برابر همه نسبت به شهر، توانمندسازی همه ساکنان
                     شهر و به خصوص گروه‌های آسیب‌‌پذیر، و پیگیری منافع به حاشیه رانده شده در فرایندهای توسعه شهری فعالیت
                     می‌کند. </p>
@@ -20,20 +20,21 @@ layout: home
         </div>
         <h3 style="text-align: center;">آخرین فعالیت‌ها</h3>
         <div class="row">
-        {% for post in site.posts limit:3 %}
+            {% for post in site.posts limit:3 %}
             <div class="col-lg col-md-4">
                 <div class="box-shadow no-padding">
-                    <a href="{{ BASE_PATH }}{{ post.url }}" class="home-post-thumbnail" style="background-image: url('{{ BASE_PATH }}{{ post.thumbnail }}');">
+                    <a href="{{ BASE_PATH }}{{ post.url }}" class="home-post-thumbnail"
+                       style="background-image: url('{{ BASE_PATH }}{{ post.thumbnail }}');">
                         <div class="home-post-title">
                             <h4>{{ post.title }}</h4>
                             <h6 id="rc{{ post.date}}">{{ post.date }}</h6>
-							<script>
-								var date = '{{ post.date  }}'
-									moment.loadPersian(true);
-									var jalaliDate = moment(date, 'YYYY-M-D HH:mm:ss TZD').format('ddd jD jMMMM jYYYY');
-									document.getElementById('rc{{ post.date}}').innerText = jalaliDate
-							</script>
-						</div>
+                            <script>
+                                var date = '{{ post.date  }}'
+                                moment.loadPersian(true);
+                                var jalaliDate = moment(date, 'YYYY-M-D HH:mm:ss TZD').format('ddd jD jMMMM jYYYY');
+                                document.getElementById('rc{{ post.date}}').innerText = jalaliDate
+                            </script>
+                        </div>
                     </a>
                     <div class="home-post-text">
                         <p>{{ post.content | strip_html | truncatewords:30 }} </p>
@@ -41,7 +42,7 @@ layout: home
                     </div>
                 </div>
             </div>
-        {% endfor %}
+            {% endfor %}
         </div>
     </div>
 </section>
@@ -53,14 +54,14 @@ layout: home
     <div class="container">
         <h2 style="text-align: center;">با هم حق پیاده در شهر را مطالبه می‌کنیم</h2>
         <div class="row">
-            <div style="text-align: center;" class="col-lg col-md-6">
+            <div style="text-align: center;" class="col-lg">
                 <p> این کارگروه، اولین جلسه رسمی خود را در ۲۶ شهریور ۹۶ تشکیل داد. تمرکز اصلی کارگروه روی تضمین حق عابر
                     پیاده به عنوان یک گروه به حاشیه‌رانده شده در فرآیند توسعه شهر و نیز مطرح کردن شهر انسان‌محور در
                     برابر شهر ماشین‌محور است. موضوع حق پیاده در شهر، از مسایل اصلی مورد توجه باهمستان از ابتدای فعالیتش
                     بوده و این کارگروه در راستای پیگیری مطالبات بر زمین مانده از گذشته و همچنین اولویت انتخاب شده توسط
                     اعضا در مجمع عمومی تشکیل شده است. دو پروژه اصلی این کارگروه، چهارراه ولیعصر و تشکیل کمیته پیاده و
                     دوچرخه در شورای شهر است.
-                    کار محلی باهمستان</p>
+                </p>
                 <a class="btn btn-lg btn-primary" href="/pido/">درباره کارگروه پیاده</a>
                 <a class="btn btn-lg btn-primary" href="/pido/#join_wg">پیوستن به کارگروه پیاده</a>
                 <br>
@@ -69,21 +70,22 @@ layout: home
             <br>
         </div>
         <div class="row">
-        {% for post in site.categories.pido limit:3 %}
+            {% for post in site.categories.pido limit:3 %}
             {% if post.tags contains 'ویژه' %}
             <div class="col-md-4">
                 <div class="box-shadow no-padding">
-                    <a href="{{ BASE_PATH }}{{ post.url }}" class="home-post-thumbnail" style="background-image: url('{{ BASE_PATH }}{{ post.thumbnail }}');">
+                    <a href="{{ BASE_PATH }}{{ post.url }}" class="home-post-thumbnail"
+                       style="background-image: url('{{ BASE_PATH }}{{ post.thumbnail }}');">
                         <div class="home-post-title">
                             <h4>{{ post.title }}</h4>
                             <h6 id="pd{{ post.date}}">{{ post.date }}</h6>
-							<script>
-								var date = '{{ post.date  }}'
-									moment.loadPersian(true);
-									var jalaliDate = moment(date, 'YYYY-M-D HH:mm:ss TZD').format('ddd jD jMMMM jYYYY');
-									document.getElementById('pd{{ post.date}}').innerText = jalaliDate
-							</script>
-						</div>
+                            <script>
+                                var date = '{{ post.date  }}'
+                                moment.loadPersian(true);
+                                var jalaliDate = moment(date, 'YYYY-M-D HH:mm:ss TZD').format('ddd jD jMMMM jYYYY');
+                                document.getElementById('pd{{ post.date}}').innerText = jalaliDate
+                            </script>
+                        </div>
                     </a>
                     <div class="home-post-text">
                         <p>{{ post.content | strip_html | truncatewords:30 }} </p>
@@ -92,7 +94,7 @@ layout: home
                 </div>
             </div>
             {% endif %}
-        {% endfor %}
+            {% endfor %}
         </div>
 
     </div>
@@ -105,7 +107,7 @@ layout: home
     <div class="container">
         <h2 style="text-align: center;">با هم مشارکت در محله را تمرین می‌کنیم</h2>
         <div class="row">
-            <div style="text-align: center;" class="col-lg col-md-6">
+            <div style="text-align: center;" class="col-lg">
                 <p>فعالیت محلی باهمستان فعالیتی محل محور است که بر پایه اصول بنیادین مشارکت، مقاومت و ممارست بنا شده
                     است. ماموریت نهایی پروژه کار محلی باهمستان فعال سازی ساکنان در امور محلی است. در این راستا، باهمستان
                     در نظر دارد تا با اجرای این فعالیت در محله‌ای خاص فضایی را فراهم آورد که در آن شهرمندان از گروه‌های
@@ -121,22 +123,23 @@ layout: home
             <br>
             <br>
         </div>
-         <div class="row">
-        {% for post in site.categories.pasgah limit:3 %}
+        <div class="row">
+            {% for post in site.categories.pasgah limit:3 %}
             {% if post.tags contains 'ویژه' %}
             <div class="col-md-4">
                 <div class="box-shadow no-padding">
-                    <a href="{{ BASE_PATH }}{{ post.url }}" class="home-post-thumbnail" style="background-image: url('{{ BASE_PATH }}{{ post.thumbnail }}');">
+                    <a href="{{ BASE_PATH }}{{ post.url }}" class="home-post-thumbnail"
+                       style="background-image: url('{{ BASE_PATH }}{{ post.thumbnail }}');">
                         <div class="home-post-title">
                             <h4>{{ post.title }}</h4>
                             <h6 id="psg{{ post.date}}">{{ post.date }}</h6>
-							<script>
-								var date = '{{ post.date  }}'
-									moment.loadPersian(true);
-									var jalaliDate = moment(date, 'YYYY-M-D HH:mm:ss TZD').format('ddd jD jMMMM jYYYY');
-									document.getElementById('psg{{ post.date}}').innerText = jalaliDate
-							</script>
-						</div>
+                            <script>
+                                var date = '{{ post.date  }}'
+                                moment.loadPersian(true);
+                                var jalaliDate = moment(date, 'YYYY-M-D HH:mm:ss TZD').format('ddd jD jMMMM jYYYY');
+                                document.getElementById('psg{{ post.date}}').innerText = jalaliDate
+                            </script>
+                        </div>
                     </a>
                     <div class="home-post-text">
                         <p>{{ post.content | strip_html | truncatewords:30 }} </p>
@@ -145,7 +148,7 @@ layout: home
                 </div>
             </div>
             {% endif %}
-        {% endfor %}
+            {% endfor %}
         </div>
     </div>
 </section>
@@ -157,40 +160,48 @@ layout: home
     <div class="container">
         <h2 style="text-align: center;">با هم حق مسکن را مطالبه می‌کنیم</h2>
         <div class="row">
-            <div style="text-align: center;" class="col-lg col-md-6">
+            <div style="text-align: center;" class="col-lg">
                 <p>
-مهر ۹۷ حق مسکن به عنوان یکی از اولویت‌های اعضا در مجمع سالیانه باهمستان انتخاب شد و طبق روال کار باهمستان کارگروهی برای پرداختن به این موضوع طرح‌ریزی و در مرداد ۹۸ تشکیل شد. کارگروه مسکن  با هدف پیگیری حق مسکن افراد و گروه‌هایی که در سیاست‌های شهری نادیده گرفته شده‌اند (خیابان‌خواب‌ها، حاشیه‌نشینان، ساکنین سکونت‌گاه‌های غیررسمی، اجاره‌نشین‌ها، مهاجران، تهی‌دستان شهری و . . . ) طرح‌ریزی شده است  نوع فعالیت‌ها، نحوه پرداخت به مسائل و انتخاب موضوعات با توجه به اصول باهمستان توسط اعضای کارگروه و طی فرآیندی جمعی تعیین خواهد شد.
+                    مهر ۹۷ حق مسکن به عنوان یکی از اولویت‌های اعضا در مجمع سالیانه باهمستان انتخاب شد و طبق روال کار
+                    باهمستان کارگروهی برای پرداختن به این موضوع طرح‌ریزی و در مرداد ۹۸ تشکیل شد. کارگروه مسکن با هدف
+                    پیگیری حق مسکن افراد و گروه‌هایی که در سیاست‌های شهری نادیده گرفته شده‌اند (خیابان‌خواب‌ها،
+                    حاشیه‌نشینان، ساکنین سکونت‌گاه‌های غیررسمی، اجاره‌نشین‌ها، مهاجران، تهی‌دستان شهری و . . . )
+                    طرح‌ریزی شده است نوع فعالیت‌ها، نحوه پرداخت به مسائل و انتخاب موضوعات با توجه به اصول باهمستان توسط
+                    اعضای کارگروه و طی فرآیندی جمعی تعیین خواهد شد.
                 </p>
                 <a class="btn btn-lg btn-primary" href="/maskan/">درباره کارگروه مسکن</a>
                 <a class="btn btn-lg btn-primary" href="/maskan/#join_wg">پیوستن به کارگروه مسکن</a>
-            <br>
-            <br>
-         <div class="row">
-        {% for post in site.categories.maskan limit:3 %}
-            {% if post.tags contains 'ویژه' %}
-            <div class="col-md-4">
-                <div class="box-shadow no-padding">
-                    <a href="{{ BASE_PATH }}{{ post.url }}" class="home-post-thumbnail" style="background-image: url('{{ BASE_PATH }}{{ post.thumbnail }}');">
-                        <div class="home-post-title">
-                            <h4>{{ post.title }}</h4>
-                            <h6 name id="msk{{ post.date}}">{{ post.date }}</h6>
-							<script>
-								var date = '{{ post.date  }}'
-									moment.loadPersian(true);
-									var jalaliDate = moment(date, 'YYYY-M-D HH:mm:ss TZD').format('ddd jD jMMMM jYYYY');
-									document.getElementById('msk{{ post.date}}').innerText = jalaliDate
-							</script>
-						</div>
-                    </a>
-                    <div class="home-post-text">
-                        <p>{{ post.content | strip_html | truncatewords:30 }} </p>
-                        <a class="btn btn-link btn-sm" href="{{ BASE_PATH }}{{ post.url }}">بیشتر</a>
+                <br>
+                <br>
+                <div class="row">
+                    {% for post in site.categories.maskan limit:3 %}
+                    {% if post.tags contains 'ویژه' %}
+                    <div class="col-md-4">
+                        <div class="box-shadow no-padding">
+                            <a href="{{ BASE_PATH }}{{ post.url }}" class="home-post-thumbnail"
+                               style="background-image: url('{{ BASE_PATH }}{{ post.thumbnail }}');">
+                                <div class="home-post-title">
+                                    <h4>{{ post.title }}</h4>
+                                    <h6 name id="msk{{ post.date}}">{{ post.date }}</h6>
+                                    <script>
+                                        var date = '{{ post.date  }}'
+                                        moment.loadPersian(true);
+                                        var jalaliDate = moment(date, 'YYYY-M-D HH:mm:ss TZD').format('ddd jD jMMMM jYYYY');
+                                        document.getElementById('msk{{ post.date}}').innerText = jalaliDate
+                                    </script>
+                                </div>
+                            </a>
+                            <div class="home-post-text">
+                                <p>{{ post.content | strip_html | truncatewords:30 }} </p>
+                                <a class="btn btn-link btn-sm" href="{{ BASE_PATH }}{{ post.url }}">بیشتر</a>
+                            </div>
+                        </div>
                     </div>
+                    {% endif %}
+                    {% endfor %}
                 </div>
-            </div>
-            {% endif %}
-        {% endfor %}
-        </div>
 
+            </div>
+        </div>
     </div>
 </section>
