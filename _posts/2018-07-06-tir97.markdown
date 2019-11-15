@@ -6,7 +6,7 @@ thumbnail: "/assets/img/97tir-thumbnail.jpg"
 categories:
 - pido
 tags:
-- گذرگاه غیز همسطح
+- گذرگاه غیرهمسطح
 - ویژه
 - شهر دسترس‌پذیر
 - حق برشهر
