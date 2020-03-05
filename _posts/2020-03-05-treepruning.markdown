@@ -1,6 +1,7 @@
 ---
 title: 'نهال‌هایی که قرار نیست درخت شوند'
 subtitle: 'هرس‌ سنگین شاخه‌ها، تصویری نمادین از رابطه‌ی شهر  و درختان'
+author: 'سینا روحانی'
 layout: post
 permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/98derakht-thumbnail.jpg"
