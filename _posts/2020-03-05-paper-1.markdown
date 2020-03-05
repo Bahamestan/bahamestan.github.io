@@ -1,6 +1,6 @@
 ---
 title: 'نهال‌هایی که قرار نیست درخت شوند'
-subtitle: 'هرس‌ سنگین شاخه‌ها، تصویری نمادین از رابطه‌ی شهر  و درختان'
+slogan: 'هرس‌ سنگین شاخه‌ها، تصویری نمادین از رابطه‌ی شهر  و درختان'
 layout: post
 permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/98derakht-thumbnail.jpg"
