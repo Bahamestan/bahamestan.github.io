@@ -1,6 +1,7 @@
 ---
 title: 'بیانیه شماره ۱ باهمستان درباره حقوق اجاره‌نشینی'
 subtitle: ''
+author: 'باهمستان'
 layout: post
 permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/98dey-thumbnail.jpg"

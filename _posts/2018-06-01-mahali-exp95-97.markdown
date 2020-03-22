@@ -1,5 +1,6 @@
 ---
 title: 'گزارش مالی کارگروه محلی باهمستان از خرداد ۱۳۹۵ تا خرداد ۱۳۹۷'
+author: 'باهمستان'
 layout: post
 permalink: /:categories/:title:output_ext
 categories:

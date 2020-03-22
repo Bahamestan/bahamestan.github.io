@@ -1,5 +1,6 @@
 ---
 title: 'گزارش مالی باهمستان از تیر ۹۶ تا خرداد ۹۷'
+author: 'باهمستان'
 layout: post
 permalink: /:categories/:title:output_ext
 categories:

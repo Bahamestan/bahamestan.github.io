@@ -1,5 +1,6 @@
 ---
 title: 'رویداد شهر بدون مانع'
+author: 'باهمستان'
 layout: post
 permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/96azar-thumbnail.png"

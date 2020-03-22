@@ -1,6 +1,7 @@
 ---
 title: 'نشست «ایدئولوژی پنهان شهر و حذف صدای مستأجران»'
 subtitle: 'بررسی رویکرد باهمستان در مسئله اجاره‌نشینی'
+author: 'باهمستان'
 layout: post
 permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/98bahman-thumbnail.jpg"

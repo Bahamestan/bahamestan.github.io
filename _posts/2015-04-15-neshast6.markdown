@@ -1,5 +1,6 @@
 ---
 title: 'نشست ششم: نقش شورای شهر و انتخاب مستقیم شهردار'
+author: 'باهمستان'
 layout: post
 permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/neshast6-thumbnail.jpg"

@@ -1,5 +1,6 @@
 ---
 title: 'باهمصدا شویم و گذربهتر بسازیم'
+author: 'باهمستان'
 layout: post
 permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/98ordibehesht-thumbnail.jpg"

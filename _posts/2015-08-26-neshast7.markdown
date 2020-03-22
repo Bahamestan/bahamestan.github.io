@@ -1,5 +1,6 @@
 ---
 title: 'نشست هفتم: تهران خانه افغانستانی‌ها هم هست'
+author: 'باهمستان'
 layout: post
 permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/neshast7-thumbnail.jpg"

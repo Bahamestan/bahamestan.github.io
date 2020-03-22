@@ -1,5 +1,6 @@
 ---
 title: 'نشست اول: نقد و بررسی زیرگذر چهارراه ولیعصر'
+author: 'باهمستان'
 layout: post
 permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/neshast1-thumbnail.jpg"

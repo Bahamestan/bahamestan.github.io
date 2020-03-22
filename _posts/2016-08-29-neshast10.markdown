@@ -1,5 +1,6 @@
 ---
 title: 'نشست دهم: پرس و جو پیرامون مسائل محله اسلام آباد'
+author: 'باهمستان'
 layout: post
 permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/neshast10-thumbnail.jpg"

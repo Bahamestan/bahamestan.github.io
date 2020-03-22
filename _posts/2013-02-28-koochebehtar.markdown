@@ -1,5 +1,6 @@
 ---
 title: 'رویداد کوچه بهتر'
+author: 'باهمستان'
 layout: post
 permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/91esfand-thumbnail.jpg"

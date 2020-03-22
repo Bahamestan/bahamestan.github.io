@@ -1,5 +1,6 @@
 ---
 title: 'نشست هشتم: در جستجوی حق کودک بر شهر'
+author: 'باهمستان'
 layout: post
 permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/neshast8-thumbnail.jpg"

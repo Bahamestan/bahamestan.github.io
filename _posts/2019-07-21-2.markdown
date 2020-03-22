@@ -1,6 +1,7 @@
 ---
 title: 'قلب سبز محله'
 subtitle: 'ماجراهای تیستوهای سبز انگشتی1 محله زهتابی'
+author: 'باهمستان'
 layout: post
 permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/98tir-thumbnail.jpg"
