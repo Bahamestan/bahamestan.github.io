@@ -8,10 +8,9 @@ thumbnail: "/assets/img/99drt-thumbnail.jpg"
 categories:
 - pido
 tags:
-- ویژه
-- شهر دسترس‌پذیر
 - حق برشهر
-- حمل و نقل عمومی
+- حمل‌ونقل عمومی
+- عدالت شهری
 images:
 excerpt_separator: "<!--بیشتر-->"
 ---
