@@ -10,7 +10,6 @@ categories:
 tags:
 - اپیدمی
 - محله
-- ویژه
 images:
 excerpt_separator: "<!--بیشتر-->"
 ---

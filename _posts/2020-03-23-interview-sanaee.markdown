@@ -7,6 +7,7 @@ permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/99fallah-thumbnail.jpg"
 categories:
 - pasgah
+- paper
 tags:
 - ویژه
 - محله

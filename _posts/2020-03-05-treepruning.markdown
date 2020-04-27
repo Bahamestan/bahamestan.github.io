@@ -8,7 +8,6 @@ thumbnail: "/assets/img/98derakht-thumbnail.jpg"
 categories:
 - paper
 tags:
-- ویژه
 - یادداشت
 - درخت‌کاری
 images:

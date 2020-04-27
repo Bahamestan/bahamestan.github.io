@@ -7,8 +7,8 @@ thumbnail: "/assets/img/96azar-thumbnail.png"
 categories:
 - pido
 tags:
-- ویژه
 - معلولان
+- ویژه
 - شهر بدون مانع
 - چهارراه ولیعصر
 images:
