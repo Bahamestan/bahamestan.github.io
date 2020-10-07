@@ -14,10 +14,15 @@ byString = function(o, s) {
 }
 
 $(document).ready(function(){
+  var clipboard = new ClipboardJS('.btnCopy');
+  clipboard.on('success', function(e) {
+      e.trigger.innerHTML = "کپی شد!";
+      e.clearSelection();
+  });
   $.ajax({
     url: $("meta#page-data-url").data("url"),
     method: "GET",
-    success: function(data){            
+    success: function(data){
       $("[data-ref]").each(function(){
         if ($(this).prop("tagName") === "A"){
           $(this).prop("href", byString(data, $(this).data('ref')))
@@ -54,13 +59,13 @@ $(document).ready(function(){
   window.addEventListener("DOMContentLoaded", function() {
 
     // get the form elements defined in your form HTML above
-    
+
     var form = document.getElementById("join-form");
     var button = document.getElementById("join-form-button");
     var status = document.getElementById("join-form-status");
 
     // Success and Error functions for after the form is submitted
-    
+
     function success() {
       form.reset();
       button.style = "display: none ";
@@ -79,7 +84,7 @@ $(document).ready(function(){
       ajax(form.method, form.action, data, success, error);
     });
   });
-  
+
   // helper function for sending an AJAX request
 
   function ajax(method, url, data, success, error) {
@@ -97,4 +102,3 @@ $(document).ready(function(){
     xhr.send(data);
   }
 // formspree js end
-

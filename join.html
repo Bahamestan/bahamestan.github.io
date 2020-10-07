@@ -42,18 +42,16 @@ permalink: /join/
         </div>
       </div>
     </div>
-  </div>
 </section>
 <section>
     <div class="blank-space"></div>
     <div class="container">
      <div id="join-form-button">
 		<h4>فرم عضویت:</h4>
-      <form
-            action="http://merchant.arianpal.com/postservice/"
-            method="POST"
-            id="TransactionForm"
-        >
+    <form id="joinForm"
+      action="https://formspree.io/f/xbjrnlzk"
+      method="POST"
+    >
         <input type="hidden" id="MerchantID" value="4154105" name="MerchantID"/>
         <input type="hidden" id="Password" value="sWTqFAknH" name="Password"/>
       <div class="row">
@@ -69,7 +67,7 @@ permalink: /join/
           <label for="Mobile">شماره تماس</label>
         </div>
         <div class="col-md-9">
-          <input type="text" name="Mobile" placeholder="شماره تماس خود را وارد کنید..." oninvalid="this.setCustomValidity('لطفاً شماره تماس خود را وارد کنید.')">
+          <input type="text" name="Mobile" placeholder="شماره تماس خود را وارد کنید..." required oninvalid="this.setCustomValidity('لطفاً شماره تماس خود را وارد کنید.')">
         </div>
       </div>
       <div class="row">
@@ -77,34 +75,87 @@ permalink: /join/
           <label for="Email">ایمیل</label>
         </div>
         <div class="col-md-9">
-          <input type="text" name="Email" placeholder="آدرس ایمیل خود را وارد کنید..." oninvalid="this.setCustomValidity('لطفاً آدرس ایمیل خود را وارد کنید.')">
+          <input type="text" name="Email" placeholder="آدرس ایمیل خود را وارد کنید..." required oninvalid="this.setCustomValidity('لطفاً آدرس ایمیل خود را وارد کنید.')">
         </div>
       </div>
       <div class="row">
         <div class="col-md-3">
-          <label for="Price">نوع عضویت</label>
+          <label for="membershipFee">نوع عضویت</label>
         </div>
         <div class="col-md-9">
-			<input type="radio" id="student" name="Price" value="50000"><label for="student"> دانشجویی (با حق عضویت ۵۰ هزار تومان) </label><br>
-			<input type="radio" id="hamgaman" name="Price" value="100000" checked><label for="hamgaman"> همگامان باهمستان (با حق عضویت ۱۰۰ هزار تومان)</label><br>
-			<input type="radio" id="hamrahan" name="Price" value="250000"><label for="hamrahan"> همراهان باهمستان (با حق عضویت ۲۵۰ هزار تومان)</label><br>
-			<input type="radio" id="hamyaran" name="Price" value="1000000"><label for="hamyaran"> همیاران باهمستان (با حق عضویت یک میلیون تومان)</label>
+			<input type="radio" id="student" name="membershipFee" value="50000"><label for="student"> دانشجویی (با حق عضویت ۵۰ هزار تومان) </label><br>
+			<input type="radio" id="hamgaman" name="membershipFee" value="100000" checked><label for="hamgaman"> همگامان باهمستان (با حق عضویت ۱۰۰ هزار تومان)</label><br>
+			<input type="radio" id="hamrahan" name="membershipFee" value="250000"><label for="hamrahan"> همراهان باهمستان (با حق عضویت ۲۵۰ هزار تومان)</label><br>
+			<input type="radio" id="hamyaran" name="membershipFee" value="1000000"><label for="hamyaran"> همیاران باهمستان (با حق عضویت یک میلیون تومان)</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="transactionID">شماره تراکنش</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" name="transactionID" required placeholder="بعد از پرداخت حق عضویت به شماره کارت باهمستان شماره تراکنش را وارد کنید" oninvalid="this.setCustomValidity('لطفاً شماره تراکنش  را وارد کنید.')">
+          <small>شماره کارت باهمستان: 6221061080026661</small>
+          <a class="btn btn-secondary btn-sm text-light btnCopy" data-clipboard-text="6221061080026661"  oninvalid="this.setCustomValidity('test')">کپی کنید!</a>
         </div>
       </div>
 
 
       <div class="row">
-	<input type="hidden" id="ResNumber" value="0" name="ResNumber"/>
-	<input type="hidden" id="Description" value="پرداخت حق عضویت" name="Description"/>
-	<input type="hidden" id="ReturnPath" value="http://bahamestan.ir/thanks/" name="ReturnPath" />
-          <input id="submit" type="submit" value="پرداخت">
+          <button class="btn btn-primary btn-lg btn-block" id="joinForm-button">ثبت</button>
       </div>
-      </form>
+    </form>
+      <div class="row">
+        <p id="joinForm-status"></p>
+      </div>
     </div>
-    <script language="javascript" type="text/javascript" src="http://www.arianpal.com/xContext/Component/Buttons/?UI=aeec2471659a47419257f5fdc50f7301&BID=61212&
-AID=7BE2616E3E5B15C735F528ECE2840FC7F6370D99&Mode=1" >
-</script>
-      <p id="join-form-status"></p>
     </div>
 
 </section>
+<script>
+  window.addEventListener("DOMContentLoaded", function() {
+
+    // get the form elements defined in your form HTML above
+
+    var form = document.getElementById("joinForm");
+    var button = document.getElementById("joinForm-button");
+    var status = document.getElementById("joinForm-status");
+
+    // Success and Error functions for after the form is submitted
+
+    function success() {
+      form.reset();
+      form.style = "display: none ";
+      status.innerHTML = "درخواست عضویت شما با موفقیت ثبت شد. بعد از تأیید تراکنش عضویت شما فعال می‌شود.";
+    }
+
+    function error() {
+      status.innerHTML = "مشکلی در ثبت درخواست شما به وجود آمده است. دوباره تلاش کنید.";
+    }
+
+    // handle the form submission event
+
+    form.addEventListener("submit", function(ev) {
+      ev.preventDefault();
+      var data = new FormData(form);
+      ajax(form.method, form.action, data, success, error);
+    });
+  });
+
+  // helper function for sending an AJAX request
+
+  function ajax(method, url, data, success, error) {
+    var xhr = new XMLHttpRequest();
+    xhr.open(method, url);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        success(xhr.response, xhr.responseType);
+      } else {
+        error(xhr.status, xhr.response, xhr.responseType);
+      }
+    };
+    xhr.send(data);
+  }
+</script>
