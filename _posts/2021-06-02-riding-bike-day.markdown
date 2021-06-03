@@ -1,6 +1,6 @@
 ---
 title: 'روز جهانی دوچرخه‌سواری؛ تلنگری دوباره در نسبت ما با شهر'
-author: 'باهمستان'
+author: 'محمد نظرپور'
 layout: post
 permalink: /:categories/:title:output_ext
 thumbnail: "/assets/img/1400riding-bike-98-thumbnail.jpg"
