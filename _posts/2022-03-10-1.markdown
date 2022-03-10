@@ -11,9 +11,6 @@ tags:
 - ویژه
 - شهر بدون مانع
 - چهارراه ولیعصر
-images:
-- image_path: /assets/img/1400esfand-thumbnail.jpg
-  title: "1400esfand-thumbnail"
 excerpt_separator: "<!--بیشتر-->"
 ---
 
