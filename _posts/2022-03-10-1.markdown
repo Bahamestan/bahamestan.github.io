@@ -1,6 +1,6 @@
 ---
-title: 'بیانیه مجمع حق بر شهر باهمستان در رابطه با طرح حصارکشی تئاتر شهر'
-subtitle: 'حصارکشی فضا در نظام غارتِ شهر'
+title: 'حصارکشی فضا در نظام غارتِ شهر'
+subtitle: 'بیانیه مجمع حق بر شهر باهمستان در رابطه با طرح حصارکشی تئاتر شهر'
 author: 'باهمستان'
 layout: post
 permalink: /statement/city-theater-fencing/:title:output_ext
