@@ -9,7 +9,6 @@ categories:
 - maskan
 tags:
 - ویژه
-- کارمسکن
 - مسکن
 - اجاره‌نشینی
 images:
